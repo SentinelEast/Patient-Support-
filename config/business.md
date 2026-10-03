@@ -5,7 +5,7 @@ Single source of truth. Every agent and SOP references this file; none restate i
 ## Identity and sender
 
 - Brand: The AI Agency Blueprint
-- Sender: chiefofstaff@theaiagencyblueprint.com. Connected in Apollo as a Gmail account (verified 2026-10-03). Mailwarming is NOT yet enabled (Joaquin toggles it in Apollo).
+- Sender: chiefofstaff@theaiagencyblueprint.com. Connected in Apollo as a Gmail account (verified 2026-10-03). Mailwarming ENABLED 2026-10-03 (approved by Joaquin). Apollo send limits on this mailbox: 50/day, 6/hour, 10-minute delay; Patty enforces our 30/day cap.
 - Signature (APPROVED by Joaquin): the Chief of Staff block in /config/footer.md (role-based, no invented personal name). Emails speak as "we"; Joaquin is "our CEO" where the call is offered. LinkedIn notes are the exception: they go out from Joaquin's own account and are written in his voice.
 - Footer and unsubscribe: /config/footer.md (verbatim)
 - Retired brand names must never appear anywhere. Enforced by `python execution/brand_scrub.py` (zero hits required; the patterns live only in that script).
@@ -64,13 +64,17 @@ Off-phase pitch = critical error in shadow mode.
 
 ## Domains (owned by Joaquin; do not assume names)
 
+Decisions (2026-10-03): all 12 sending inboxes present as **Chief of Staff** (same display name and signature; mailbox local-parts differ per inbox, e.g. chiefofstaff1-4). The primary domain is never used for cold sends. A second existing domain carries the retired brand and is not used.
+
 | Slot | Value | Status |
 |---|---|---|
-| DOMAIN_1 | PLACEHOLDER | open item |
-| DOMAIN_2 | PLACEHOLDER | open item |
-| DOMAIN_3 | PLACEHOLDER | open item |
+| DOMAIN_1 | the one existing usable domain (name to be entered) | Joaquin to provide |
+| DOMAIN_2 | to be purchased | Joaquin purchasing "shortly" |
+| DOMAIN_3 | to be purchased | Joaquin purchasing "shortly" |
 
-Each domain hosts 4 mailboxes. Joaquin confirms none of the three contains the retired brand name; `execution/brand_scrub.py` re-checks this table once real values are entered.
+Each domain hosts 4 mailboxes. Joaquin creates all 12 mailboxes after the domains exist. `execution/brand_scrub.py` re-checks this table once real values are entered. Each new domain needs SPF, DKIM and DMARC before warm-up.
+
+**Interim capacity:** with only DOMAIN_1 live, capacity is at most 4 inboxes x 30 = 120/day (about 600 sends/week, roughly 200 new prospects/week on a 3-touch sequence). Patty's capacity check reduces the number automatically; Aaron sizes the list to it. Warm-up for DOMAIN_1 inboxes can start as soon as they exist; do not wait for the other domains.
 
 ## Weekly KPI targets (Aaron compares against)
 
@@ -98,7 +102,7 @@ Current link is Joaquin's general scheduling page. Recommend replacing it in out
 - Brand-clean page title and description (retired brand names must not appear; check the current page).
 - Source tagging (`?src=apollo`) so Patty can count meetings booked per sequence, and the booking lands in Apollo (Apollo meeting link, or a calendar tool with an Apollo integration) so the touch is logged.
 - Why not the general page: it may expose other meeting types or lengths, carries no source tracking, and a prospect who sees a personal calendar may book the wrong thing.
-Keep the `{{booking_link}}` placeholder in copy until the new link exists.
+Joaquin supplied a Cal.com link on 2026-10-03: `https://cal.com/joaquin-garcia-j.garcia-i9bobi/www.theaiagencyblueprint.com`. NOT VERIFIED: this environment cannot reach cal.com. Joaquin to open it in a private window and confirm: 20-minute duration, brand-clean title/description, correct calendar, buffer, intake questions. The event slug is a website address; a short slug such as `/free-20-min-call` reads cleaner in an email. Set `{{booking_link}}` to the final URL only after that check.
 
 ## Prospecting credit budget (Vibe Prospecting)
 
@@ -130,15 +134,15 @@ Done:
 - [x] Chief of Staff signature approved
 - [x] Call length: 20 minutes
 - [x] Vibe Prospecting cap and 700-row start approved
-- [x] chiefofstaff@theaiagencyblueprint.com connected in Apollo (Gmail, active)
+- [x] chiefofstaff@theaiagencyblueprint.com connected in Apollo (Gmail, active), Mailwarming ON
+- [x] All inboxes present as Chief of Staff
+- [x] Primary domain and retired-brand domain excluded from sending
 
 Open (see the numbered list in chat for the current questions):
-- [ ] Turn on Mailwarming for chiefofstaff@ in Apollo (Settings > Mailboxes)
-- [ ] Decide how the 12 sending inboxes present as "chiefofstaff" (From vs Reply-To vs display name)
-- [ ] Provide DOMAIN_1, DOMAIN_2, DOMAIN_3 (or approve Apollo domain purchase) and confirm none contains the old brand name
+- [ ] Provide DOMAIN_1; purchase DOMAIN_2 and DOMAIN_3; confirm none contains the old brand name
 - [ ] Create the 12 mailboxes, connect to Apollo, start warm-up (~14 days)
-- [ ] Dedicated "Free 20-Minute Call" booking link (recommendation above) and Loom account
-- [ ] Telegram: bot token and chat ID
+- [ ] Verify the Cal.com booking link (page could not be fetched from this environment) and provide Loom account
+- [ ] Telegram: bot token received in chat but UNVERIFIED (api.telegram.org blocked from this environment); chat ID still needed; enter token only in Make or .env, never the repo; revoke and reissue the token since it was pasted in chat
 - [ ] Verify the opt-out link renders in an Apollo test email
 - [ ] Confirm the email verification tool (default NeverBounce) and the Apollo do-not-contact list as master suppression list
 - [ ] Review the 8 dry-run items (optional calibration, outputs/shadow/2026-10-03/)
