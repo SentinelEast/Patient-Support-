@@ -1,0 +1,49 @@
+{
+  "prospect_id": "SAMPLE-4",
+  "first_name": "Tom",
+  "last_name": "Alvarez",
+  "title": "Owner",
+  "org": "Alvarez Plumbing & Heating",
+  "city": "Cherry Hill, NJ",
+  "niche": "B",
+  "trigger_line": "Alvarez Plumbing & Heating is hiring an office coordinator.",
+  "trigger_source": "SYNTHETIC: company careers page (illustrative)",
+  "emails": [
+    {
+      "day": 0,
+      "subject": "office coordinator at Alvarez Plumbing",
+      "greeting": "Hi Tom,",
+      "body": "Saw Alvarez Plumbing & Heating is hiring an office coordinator. In most shops, a lot of that job is answering the same customer questions: service areas, what to prepare before a visit, where an invoice stands. We build AI systems, trained on your own documents, that handle those so your people don't. Want a free 20-minute call? I can send a 2-minute Loom instead.",
+      "word_count": 64,
+      "full_text": "Hi Tom,\n\nSaw Alvarez Plumbing & Heating is hiring an office coordinator. In most shops, a lot of that job is answering the same customer questions: service areas, what to prepare before a visit, where an invoice stands. We build AI systems, trained on your own documents, that handle those so your people don't. Want a free 20-minute call? I can send a 2-minute Loom instead.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    },
+    {
+      "day": 4,
+      "subject": "re: office coordinator at Alvarez Plumbing",
+      "greeting": "Hi Tom,",
+      "body": "Quick follow-up. What we build is trained on your own paperwork, live in 21 days, and run with a named human operator. If you'd like a low-risk first step, our AI Audit is it. The free 20-minute call is the fast way to see if it fits.",
+      "word_count": 47,
+      "full_text": "Hi Tom,\n\nQuick follow-up. What we build is trained on your own paperwork, live in 21 days, and run with a named human operator. If you'd like a low-risk first step, our AI Audit is it. The free 20-minute call is the fast way to see if it fits.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    },
+    {
+      "day": 9,
+      "subject": "last note",
+      "greeting": "Hi Tom,",
+      "body": "Last note from me. If the office workload is still piling up, grab a time at {{booking_link}}. No hard feelings either way. Good luck with the hire, and thanks for reading this far, Elena.",
+      "word_count": 34,
+      "full_text": "Hi Tom,\n\nLast note from me. If the office workload is still piling up, grab a time at {{booking_link}}. No hard feelings either way. Good luck with the hire, and thanks for reading this far, Elena.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    }
+  ],
+  "linkedin_note": "Tom, saw Alvarez Plumbing is hiring an office coordinator. I build AI systems that answer repeat customer questions for small shops. Happy to connect, no pitch.",
+  "sources_assumptions": [
+    "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
+    "Insight describes how the systems we build work; no results claimed; no case studies exist.",
+    "Signature 'Joaquin Garcia, CEO' and {{booking_link}} are placeholders pending Joaquin's confirmation."
+  ],
+  "sender": "chiefofstaff@theaiagencyblueprint.com",
+  "footer_ref": "config/footer.md",
+  "checks": {
+    "status": "PASS",
+    "failures": []
+  }
+}

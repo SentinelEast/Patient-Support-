@@ -17,7 +17,7 @@ PATTERNS = [
     re.compile(r"\bS\.E\.T\b", re.I),                 # initials
     re.compile("guard" + "ian" + r"[-\s]?" + "484", re.I),
 ]
-SKIP_DIRS = {".git", ".tmp", "node_modules"}
+SKIP_DIRS = {".git", ".tmp", "node_modules", "__pycache__"}
 
 
 def scan(root: str) -> list[str]:

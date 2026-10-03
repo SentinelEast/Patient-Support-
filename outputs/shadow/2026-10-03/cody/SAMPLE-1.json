@@ -1,0 +1,49 @@
+{
+  "prospect_id": "SAMPLE-1",
+  "first_name": "Dana",
+  "last_name": "Reyes",
+  "title": "Municipal Clerk",
+  "org": "Sample Township",
+  "city": "Sample Township, NJ",
+  "niche": "A",
+  "trigger_line": "Sample Township's posted council minutes appear to be running two meetings behind.",
+  "trigger_source": "SYNTHETIC: township minutes page (illustrative)",
+  "emails": [
+    {
+      "day": 0,
+      "subject": "council minutes at Sample Township",
+      "greeting": "Dear Dana Reyes,",
+      "body": "Sample Township's posted council minutes appear to be running two meetings behind. In most clerk's offices the delay isn't the decisions, it's the drafting and cross-checking afterward. We build AI systems, trained on your own agendas and past minutes, that prepare a first draft for you to review and approve. Would a free 20-minute call be useful? If you'd prefer, I can send a 2-minute Loom instead.",
+      "word_count": 67,
+      "full_text": "Dear Dana Reyes,\n\nSample Township's posted council minutes appear to be running two meetings behind. In most clerk's offices the delay isn't the decisions, it's the drafting and cross-checking afterward. We build AI systems, trained on your own agendas and past minutes, that prepare a first draft for you to review and approve. Would a free 20-minute call be useful? If you'd prefer, I can send a 2-minute Loom instead.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    },
+    {
+      "day": 4,
+      "subject": "re: council minutes at Sample Township",
+      "greeting": "Dear Dana Reyes,",
+      "body": "A brief follow-up. Everything we build is trained on your own documents, installed in 21 days, and run alongside a named human operator, so your office stays in control. If a call feels early, our AI Audit is a low-risk first step. Happy to explain on the free 20-minute call.",
+      "word_count": 50,
+      "full_text": "Dear Dana Reyes,\n\nA brief follow-up. Everything we build is trained on your own documents, installed in 21 days, and run alongside a named human operator, so your office stays in control. If a call feels early, our AI Audit is a low-risk first step. Happy to explain on the free 20-minute call.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    },
+    {
+      "day": 9,
+      "subject": "closing the loop",
+      "greeting": "Dear Dana Reyes,",
+      "body": "I'll close the loop here. If improving your minutes turnaround becomes a priority, you can book a time at {{booking_link}}. Wishing you and your office a steady season and a smooth budget cycle.",
+      "word_count": 33,
+      "full_text": "Dear Dana Reyes,\n\nI'll close the loop here. If improving your minutes turnaround becomes a priority, you can book a time at {{booking_link}}. Wishing you and your office a steady season and a smooth budget cycle.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    }
+  ],
+  "linkedin_note": "Dana, I noticed Sample Township's minutes seem to be running behind. I build AI systems that draft them for clerks to approve. Glad to connect and share more, no pitch.",
+  "sources_assumptions": [
+    "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
+    "Insight describes how the systems we build work; no results claimed; no case studies exist.",
+    "Signature 'Joaquin Garcia, CEO' and {{booking_link}} are placeholders pending Joaquin's confirmation."
+  ],
+  "sender": "chiefofstaff@theaiagencyblueprint.com",
+  "footer_ref": "config/footer.md",
+  "checks": {
+    "status": "PASS",
+    "failures": []
+  }
+}

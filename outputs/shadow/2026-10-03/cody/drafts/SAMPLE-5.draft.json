@@ -1,0 +1,37 @@
+{
+  "prospect_id": "SAMPLE-5",
+  "first_name": "Elena",
+  "last_name": "Rossi",
+  "title": "Operations Manager",
+  "org": "Delaware Valley Sample Logistics",
+  "city": "Philadelphia, PA",
+  "niche": "B",
+  "trigger_line": "Delaware Valley Sample Logistics publishes a customer portal and paperwork requirements for shipments.",
+  "trigger_source": "SYNTHETIC: company website (illustrative)",
+  "emails": [
+    {
+      "day": 0,
+      "subject": "paperwork questions at Delaware Valley Logistics",
+      "greeting": "Hi Elena,",
+      "body": "Delaware Valley Sample Logistics has real paperwork requirements for every shipment, which means your team likely answers the same status and document questions all day. We build AI systems, trained on your own documents, that answer those so your people handle the exceptions. Interested in a free 20-minute call? I can send a 2-minute Loom if you'd rather see it first."
+    },
+    {
+      "day": 4,
+      "subject": "re: paperwork questions",
+      "greeting": "Hi Elena,",
+      "body": "Quick follow-up. What we build is trained on your own documents, live in 21 days, and run with a named human operator. A low-risk first step is our AI Audit. The free 20-minute call will tell us quickly if it's worth your time."
+    },
+    {
+      "day": 9,
+      "subject": "last note",
+      "greeting": "Hi Elena,",
+      "body": "Last note from me. If answering the same customer questions is still eating your day, book a time at {{booking_link}}. No pressure either way, and thanks for reading this far, Elena."
+    }
+  ],
+  "linkedin_note": "Elena, Delaware Valley Sample Logistics clearly runs on paperwork. I build AI systems that answer repeat status and document questions. Happy to connect, no pitch.",
+  "sources_assumptions": [
+    "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
+    "Insight describes how the systems we build work; no results claimed; no case studies exist.",
+    "Signature 'Joaquin Garcia, CEO' and {{booking_link}} are placeholders pending Joaquin's confirmation."
+  ]
+}

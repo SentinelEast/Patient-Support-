@@ -1,0 +1,49 @@
+{
+  "prospect_id": "SAMPLE-2",
+  "first_name": "Marcus",
+  "last_name": "Bell",
+  "title": "DPW Director",
+  "org": "Borough of Example Park",
+  "city": "Example Park, NJ",
+  "niche": "A",
+  "trigger_line": "Recent flooding in Example Park likely drove a surge of resident calls to public works.",
+  "trigger_source": "SYNTHETIC: local news item (illustrative)",
+  "emails": [
+    {
+      "day": 0,
+      "subject": "resident calls after the flooding",
+      "greeting": "Dear Marcus Bell,",
+      "body": "After the recent flooding in the Borough of Example Park, I expect your public works office fielded a wave of the same resident questions: road closures, debris pickup, who to call. We build AI response systems, trained on your own notices and procedures, that answer those routine questions while your crew handles the real emergencies. Would a free 20-minute call be useful? I can also send a 2-minute Loom.",
+      "word_count": 69,
+      "full_text": "Dear Marcus Bell,\n\nAfter the recent flooding in the Borough of Example Park, I expect your public works office fielded a wave of the same resident questions: road closures, debris pickup, who to call. We build AI response systems, trained on your own notices and procedures, that answer those routine questions while your crew handles the real emergencies. Would a free 20-minute call be useful? I can also send a 2-minute Loom.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    },
+    {
+      "day": 4,
+      "subject": "re: resident calls after the flooding",
+      "greeting": "Dear Marcus Bell,",
+      "body": "A brief follow-up. Our systems are trained only on your own documents, installed in 21 days, and run with a named human operator, so staff remain in charge of every escalation. Our AI Audit is a low-risk first step if you want to look closer. The free 20-minute call is the easy start.",
+      "word_count": 53,
+      "full_text": "Dear Marcus Bell,\n\nA brief follow-up. Our systems are trained only on your own documents, installed in 21 days, and run with a named human operator, so staff remain in charge of every escalation. Our AI Audit is a low-risk first step if you want to look closer. The free 20-minute call is the easy start.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    },
+    {
+      "day": 9,
+      "subject": "closing the loop",
+      "greeting": "Dear Marcus Bell,",
+      "body": "Closing the loop on my end. If routine resident calls are still crowding out field work, you can pick a time at {{booking_link}}. Thank you for the work you do for the Borough.",
+      "word_count": 33,
+      "full_text": "Dear Marcus Bell,\n\nClosing the loop on my end. If routine resident calls are still crowding out field work, you can pick a time at {{booking_link}}. Thank you for the work you do for the Borough.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+    }
+  ],
+  "linkedin_note": "Marcus, after the recent flooding I imagine public works took a lot of repeat calls. I build AI systems that answer routine resident questions so crews can focus. Glad to connect, no pitch.",
+  "sources_assumptions": [
+    "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
+    "Insight describes how the systems we build work; no results claimed; no case studies exist.",
+    "Signature 'Joaquin Garcia, CEO' and {{booking_link}} are placeholders pending Joaquin's confirmation."
+  ],
+  "sender": "chiefofstaff@theaiagencyblueprint.com",
+  "footer_ref": "config/footer.md",
+  "checks": {
+    "status": "PASS",
+    "failures": []
+  }
+}
