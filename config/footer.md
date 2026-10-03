@@ -27,7 +27,7 @@ No personal name is invented for the Chief of Staff. Emails are written in the f
 
 ## Sender
 
-- From: chiefofstaff@theaiagencyblueprint.com (mailbox connection PENDING, see /config/business.md open items)
+- From: chiefofstaff@theaiagencyblueprint.com (connected in Apollo as of 2026-10-03; warm-up not yet enabled)
 - Sending inboxes themselves are on DOMAIN_1 to DOMAIN_3 (placeholders, owned by Joaquin). Footer text is identical on every inbox.
 
 ## Checks (Patty runs before loading any sequence)
