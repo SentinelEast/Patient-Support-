@@ -39,6 +39,15 @@ BANNED_CLAIMS = ["case study", "case studies", "guarantee", "our clients",
 FIRST_PERSON = re.compile(r"\b(I|I'll|I'd|I'm|I've|my|me)\b")
 
 
+def booking_link() -> str:
+    """Read the verified booking URL from the BOOKING_LINK line in config/business.md."""
+    text = open(os.path.join(ROOT, "config", "business.md"), encoding="utf-8").read()
+    m = re.search(r"^- BOOKING_LINK: (\S+)", text, re.M)
+    if not m:
+        raise SystemExit("BOOKING_LINK not found in config/business.md")
+    return m.group(1)
+
+
 def footer_blocks() -> tuple[str, str, str]:
     """Return (footer, unsubscribe, signature) from the first three fenced blocks in footer.md."""
     text = open(os.path.join(ROOT, "config", "footer.md"), encoding="utf-8").read()
@@ -100,11 +109,12 @@ def validate(d: dict, footer: str, unsub: str) -> list[str]:
 def main(src: str, dst: str) -> int:
     d = json.load(open(src, encoding="utf-8"))
     footer, unsub, signature = footer_blocks()
+    link = booking_link()
     fails = validate(d, footer, unsub)
     for e in d["emails"]:
         e["word_count"] = words(e["body"])
         e["full_text"] = (f"{e['greeting']}\n\n{e['body']}\n\n{signature}\n\n"
-                          f"{footer}\n{unsub}")
+                          f"{footer}\n{unsub}").replace("{{booking_link}}", link)
     d["sender"] = SENDER
     d["footer_ref"] = "config/footer.md"
     d["checks"] = {"status": "FAIL" if fails else "PASS", "failures": fails}

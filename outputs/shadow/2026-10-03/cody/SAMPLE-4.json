@@ -31,14 +31,14 @@
       "greeting": "Hi Tom,",
       "body": "Last note from us. If the office workload is still piling up, grab a time at {{booking_link}}. No hard feelings either way. Good luck with the hire, and thanks for reading this far, Elena.",
       "word_count": 34,
-      "full_text": "Hi Tom,\n\nLast note from us. If the office workload is still piling up, grab a time at {{booking_link}}. No hard feelings either way. Good luck with the hire, and thanks for reading this far, Elena.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+      "full_text": "Hi Tom,\n\nLast note from us. If the office workload is still piling up, grab a time at https://cal.com/joaquin-garcia-j.garcia-i9bobi/www.theaiagencyblueprint.com. No hard feelings either way. Good luck with the hire, and thanks for reading this far, Elena.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
     }
   ],
   "linkedin_note": "Tom, saw Alvarez Plumbing is hiring an office coordinator. I build AI systems that answer repeat customer questions for small shops. Happy to connect, no pitch.",
   "sources_assumptions": [
     "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
     "Insight describes how the systems we build work; no results claimed; no case studies exist.",
-    "Chief of Staff signature (role-based, no personal name) and {{booking_link}} are placeholders pending Joaquin's approval."
+    "Chief of Staff signature approved; booking link substituted from config/business.md."
   ],
   "sender": "chiefofstaff@theaiagencyblueprint.com",
   "footer_ref": "config/footer.md",

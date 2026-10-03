@@ -31,14 +31,14 @@
       "greeting": "Dear Marcus Bell,",
       "body": "Closing the loop on our end. If routine resident calls are still crowding out field work, you can pick a time at {{booking_link}}. Thank you for the work you do for the Borough.",
       "word_count": 33,
-      "full_text": "Dear Marcus Bell,\n\nClosing the loop on our end. If routine resident calls are still crowding out field work, you can pick a time at {{booking_link}}. Thank you for the work you do for the Borough.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+      "full_text": "Dear Marcus Bell,\n\nClosing the loop on our end. If routine resident calls are still crowding out field work, you can pick a time at https://cal.com/joaquin-garcia-j.garcia-i9bobi/www.theaiagencyblueprint.com. Thank you for the work you do for the Borough.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
     }
   ],
   "linkedin_note": "Marcus, after the recent flooding I imagine public works took a lot of repeat calls. I build AI systems that answer routine resident questions so crews can focus. Glad to connect, no pitch.",
   "sources_assumptions": [
     "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
     "Insight describes how the systems we build work; no results claimed; no case studies exist.",
-    "Chief of Staff signature (role-based, no personal name) and {{booking_link}} are placeholders pending Joaquin's approval."
+    "Chief of Staff signature approved; booking link substituted from config/business.md."
   ],
   "sender": "chiefofstaff@theaiagencyblueprint.com",
   "footer_ref": "config/footer.md",

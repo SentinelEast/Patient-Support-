@@ -31,14 +31,14 @@
       "greeting": "Dear Dana Reyes,",
       "body": "We'll close the loop here. If improving your minutes turnaround becomes a priority, you can book a time at {{booking_link}}. Wishing you and your office a steady season and a smooth budget cycle.",
       "word_count": 33,
-      "full_text": "Dear Dana Reyes,\n\nWe'll close the loop here. If improving your minutes turnaround becomes a priority, you can book a time at {{booking_link}}. Wishing you and your office a steady season and a smooth budget cycle.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+      "full_text": "Dear Dana Reyes,\n\nWe'll close the loop here. If improving your minutes turnaround becomes a priority, you can book a time at https://cal.com/joaquin-garcia-j.garcia-i9bobi/www.theaiagencyblueprint.com. Wishing you and your office a steady season and a smooth budget cycle.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
     }
   ],
   "linkedin_note": "Dana, I noticed Sample Township's minutes seem to be running behind. I build AI systems that draft them for clerks to approve. Glad to connect and share more, no pitch.",
   "sources_assumptions": [
     "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
     "Insight describes how the systems we build work; no results claimed; no case studies exist.",
-    "Chief of Staff signature (role-based, no personal name) and {{booking_link}} are placeholders pending Joaquin's approval."
+    "Chief of Staff signature approved; booking link substituted from config/business.md."
   ],
   "sender": "chiefofstaff@theaiagencyblueprint.com",
   "footer_ref": "config/footer.md",

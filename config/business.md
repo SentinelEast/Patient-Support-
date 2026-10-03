@@ -68,13 +68,15 @@ Decisions (2026-10-03): all 12 sending inboxes present as **Chief of Staff** (sa
 
 | Slot | Value | Status |
 |---|---|---|
-| DOMAIN_1 | the one existing usable domain (name to be entered) | Joaquin to provide |
-| DOMAIN_2 | to be purchased | Joaquin purchasing "shortly" |
-| DOMAIN_3 | to be purchased | Joaquin purchasing "shortly" |
+| DOMAIN_1 | theaiagentagencyblueprint.com | provided 2026-10-03; spelling has "agent" in it, Joaquin to confirm it is intended; purchase status unconfirmed |
+| DOMAIN_2 | theaiagencyblueprint.org | provided 2026-10-03; purchase status unconfirmed |
+| DOMAIN_3 | theaiagencyblueprint.io | provided 2026-10-03; purchase status unconfirmed |
 
 Each domain hosts 4 mailboxes. Joaquin creates all 12 mailboxes after the domains exist. `execution/brand_scrub.py` re-checks this table once real values are entered. Each new domain needs SPF, DKIM and DMARC before warm-up.
 
-**Interim capacity:** with only DOMAIN_1 live, capacity is at most 4 inboxes x 30 = 120/day (about 600 sends/week, roughly 200 new prospects/week on a 3-touch sequence). Patty's capacity check reduces the number automatically; Aaron sizes the list to it. Warm-up for DOMAIN_1 inboxes can start as soon as they exist; do not wait for the other domains.
+Retired-brand check on all three names: clean. Setup steps per domain are in /runbook/RUNBOOK.md.
+
+**Interim capacity:** until each domain's mailboxes exist and are warm, e.g. with only one domain live, capacity is at most 4 inboxes x 30 = 120/day (about 600 sends/week, roughly 200 new prospects/week on a 3-touch sequence). Patty's capacity check reduces the number automatically; Aaron sizes the list to it. Warm-up for DOMAIN_1 inboxes can start as soon as they exist; do not wait for the other domains.
 
 ## Weekly KPI targets (Aaron compares against)
 
@@ -102,7 +104,9 @@ Current link is Joaquin's general scheduling page. Recommend replacing it in out
 - Brand-clean page title and description (retired brand names must not appear; check the current page).
 - Source tagging (`?src=apollo`) so Patty can count meetings booked per sequence, and the booking lands in Apollo (Apollo meeting link, or a calendar tool with an Apollo integration) so the touch is logged.
 - Why not the general page: it may expose other meeting types or lengths, carries no source tracking, and a prospect who sees a personal calendar may book the wrong thing.
-Joaquin supplied a Cal.com link on 2026-10-03: `https://cal.com/joaquin-garcia-j.garcia-i9bobi/www.theaiagencyblueprint.com`. NOT VERIFIED: this environment cannot reach cal.com. Joaquin to open it in a private window and confirm: 20-minute duration, brand-clean title/description, correct calendar, buffer, intake questions. The event slug is a website address; a short slug such as `/free-20-min-call` reads cleaner in an email. Set `{{booking_link}}` to the final URL only after that check.
+- BOOKING_LINK: https://cal.com/joaquin-garcia-j.garcia-i9bobi/www.theaiagencyblueprint.com
+
+VERIFIED by Joaquin 2026-10-03 (20 minutes, brand-clean, correct calendar, buffer and intake set; I could not open it myself, cal.com is blocked from this environment). `execution/assemble_sequence.py` reads the `BOOKING_LINK` line above and substitutes it for `{{booking_link}}` in every email. Optional later: a shorter slug such as `/free-20-min-call`.
 
 ## Prospecting credit budget (Vibe Prospecting)
 
@@ -136,12 +140,14 @@ Done:
 - [x] Vibe Prospecting cap and 700-row start approved
 - [x] chiefofstaff@theaiagencyblueprint.com connected in Apollo (Gmail, active), Mailwarming ON
 - [x] All inboxes present as Chief of Staff
+- [x] Domains named (DOMAIN_1-3), clean of retired brand
+- [x] Cal.com booking link verified
 - [x] Primary domain and retired-brand domain excluded from sending
 
 Open (see the numbered list in chat for the current questions):
-- [ ] Provide DOMAIN_1; purchase DOMAIN_2 and DOMAIN_3; confirm none contains the old brand name
+- [ ] Confirm the three domains are purchased and DOMAIN_1's spelling ("agent") is intended
 - [ ] Create the 12 mailboxes, connect to Apollo, start warm-up (~14 days)
-- [ ] Verify the Cal.com booking link (page could not be fetched from this environment) and provide Loom account
+- [ ] Decide whether to keep the 2-minute Loom offer in Email 1 (Joaquin would record them on request)
 - [ ] Telegram: bot token received in chat but UNVERIFIED (api.telegram.org blocked from this environment); chat ID still needed; enter token only in Make or .env, never the repo; revoke and reissue the token since it was pasted in chat
 - [ ] Verify the opt-out link renders in an Apollo test email
 - [ ] Confirm the email verification tool (default NeverBounce) and the Apollo do-not-contact list as master suppression list

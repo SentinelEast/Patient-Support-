@@ -49,5 +49,5 @@ The script appends the footer and unsubscribe line from /config/footer.md, adds 
 
 ## Sources / Assumptions (this SOP)
 - Chief of Staff signature is role-based with no invented personal name; Joaquin to approve.
-- `{{booking_link}}` is a placeholder until the real booking link is set.
+- Cody writes `{{booking_link}}`; the assembler substitutes the verified BOOKING_LINK from /config/business.md.
 - Subject lines are lowercase, short, no clickbait.

@@ -59,6 +59,16 @@ During shadow, notifications to Slack + Telegram are limited to "N drafts ready 
 2. Review Patty's 17:30 dashboard.
 3. Take booked calls (25-min structure).
 
+## Domain and mailbox setup (per sending domain; Joaquin does these, 12 mailboxes total)
+
+DOMAIN_1-3 are in /config/business.md. For each domain:
+1. Confirm it is registered. Point its website to https://www.theaiagencyblueprint.com (redirect) so recipients who visit it land on the real site.
+2. DNS: SPF, DKIM and DMARC (start DMARC at `p=none`, tighten after 2 clean weeks). Verify with a free checker before warming.
+3. Create 4 mailboxes (suggested names chiefofstaff1 to chiefofstaff4). Display name "Chief of Staff, The AI Agency Blueprint". Add the Chief of Staff signature from /config/footer.md.
+4. Connect each mailbox to Apollo (Settings > Mailboxes), turn Mailwarming on, and keep the daily send limit at or below 30.
+5. Tell Patty. She counts a mailbox toward capacity only when Apollo shows it connected, warmed and healthy (~14 days).
+6. Warm-up can start per domain as soon as its mailboxes exist; do not wait for the other domains.
+
 ## Brand scrub
 
 Run `python execution/brand_scrub.py` before any commit and before any template goes live. Zero hits required.

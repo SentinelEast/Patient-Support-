@@ -31,14 +31,14 @@
       "greeting": "Dear Priya Nair,",
       "body": "We'll close the loop here. Should coverage during the transition remain a concern, you can book time at {{booking_link}}. Best wishes to you and everyone at the Township as the transition continues.",
       "word_count": 32,
-      "full_text": "Dear Priya Nair,\n\nWe'll close the loop here. Should coverage during the transition remain a concern, you can book time at {{booking_link}}. Best wishes to you and everyone at the Township as the transition continues.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+      "full_text": "Dear Priya Nair,\n\nWe'll close the loop here. Should coverage during the transition remain a concern, you can book time at https://cal.com/joaquin-garcia-j.garcia-i9bobi/www.theaiagencyblueprint.com. Best wishes to you and everyone at the Township as the transition continues.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
     }
   ],
   "linkedin_note": "Priya, I saw Mock Township is hiring a clerk. I build AI systems that handle routine resident questions during staffing gaps. Glad to connect and share more, no pitch.",
   "sources_assumptions": [
     "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
     "Insight describes how the systems we build work; no results claimed; no case studies exist.",
-    "Chief of Staff signature (role-based, no personal name) and {{booking_link}} are placeholders pending Joaquin's approval."
+    "Chief of Staff signature approved; booking link substituted from config/business.md."
   ],
   "sender": "chiefofstaff@theaiagencyblueprint.com",
   "footer_ref": "config/footer.md",
