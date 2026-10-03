@@ -13,9 +13,9 @@
       "day": 0,
       "subject": "covering the clerk transition at Mock Township",
       "greeting": "Dear Priya Nair,",
-      "body": "Mock Township is hiring a municipal clerk, which often means routine resident questions land on the administrator's desk in the meantime. We build AI systems, trained on your own forms, ordinances and notices, that answer those everyday inquiries, with your staff reviewing anything unusual. Would a free 20-minute call be worthwhile? If it is easier, I can send a 2-minute Loom instead.",
-      "word_count": 62,
-      "full_text": "Dear Priya Nair,\n\nMock Township is hiring a municipal clerk, which often means routine resident questions land on the administrator's desk in the meantime. We build AI systems, trained on your own forms, ordinances and notices, that answer those everyday inquiries, with your staff reviewing anything unusual. Would a free 20-minute call be worthwhile? If it is easier, I can send a 2-minute Loom instead.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+      "body": "Mock Township is hiring a municipal clerk, which often means routine resident questions land on the administrator's desk in the meantime. We build AI systems, trained on your own forms, ordinances and notices, that answer those everyday inquiries, with your staff reviewing anything unusual. Would a free 20-minute call with our CEO, Joaquin Garcia, be worthwhile? If it is easier, we can send a 2-minute Loom instead.",
+      "word_count": 67,
+      "full_text": "Dear Priya Nair,\n\nMock Township is hiring a municipal clerk, which often means routine resident questions land on the administrator's desk in the meantime. We build AI systems, trained on your own forms, ordinances and notices, that answer those everyday inquiries, with your staff reviewing anything unusual. Would a free 20-minute call with our CEO, Joaquin Garcia, be worthwhile? If it is easier, we can send a 2-minute Loom instead.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
     },
     {
       "day": 4,
@@ -23,22 +23,22 @@
       "greeting": "Dear Priya Nair,",
       "body": "A brief follow-up. Everything we build uses your own documents, goes live in 21 days, and comes with a named human operator, so oversight stays with your team. If you want a low-risk first step, our AI Audit is available. The free 20-minute call explains it simply.",
       "word_count": 47,
-      "full_text": "Dear Priya Nair,\n\nA brief follow-up. Everything we build uses your own documents, goes live in 21 days, and comes with a named human operator, so oversight stays with your team. If you want a low-risk first step, our AI Audit is available. The free 20-minute call explains it simply.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+      "full_text": "Dear Priya Nair,\n\nA brief follow-up. Everything we build uses your own documents, goes live in 21 days, and comes with a named human operator, so oversight stays with your team. If you want a low-risk first step, our AI Audit is available. The free 20-minute call explains it simply.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
     },
     {
       "day": 9,
       "subject": "closing the loop",
       "greeting": "Dear Priya Nair,",
-      "body": "I'll close the loop here. Should coverage during the transition remain a concern, you can book time at {{booking_link}}. Best wishes to you and everyone at the Township as the transition continues.",
+      "body": "We'll close the loop here. Should coverage during the transition remain a concern, you can book time at {{booking_link}}. Best wishes to you and everyone at the Township as the transition continues.",
       "word_count": 32,
-      "full_text": "Dear Priya Nair,\n\nI'll close the loop here. Should coverage during the transition remain a concern, you can book time at {{booking_link}}. Best wishes to you and everyone at the Township as the transition continues.\n\nJoaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
+      "full_text": "Dear Priya Nair,\n\nWe'll close the loop here. Should coverage during the transition remain a concern, you can book time at {{booking_link}}. Best wishes to you and everyone at the Township as the transition continues.\n\nChief of Staff\nOffice of Joaquin Garcia, CEO\n\nThe AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com\nNot relevant? Reply \"unsubscribe\" or click here to opt out: {{unsubscribe_link}}"
     }
   ],
   "linkedin_note": "Priya, I saw Mock Township is hiring a clerk. I build AI systems that handle routine resident questions during staffing gaps. Glad to connect and share more, no pitch.",
   "sources_assumptions": [
     "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
     "Insight describes how the systems we build work; no results claimed; no case studies exist.",
-    "Signature 'Joaquin Garcia, CEO' and {{booking_link}} are placeholders pending Joaquin's confirmation."
+    "Chief of Staff signature (role-based, no personal name) and {{booking_link}} are placeholders pending Joaquin's approval."
   ],
   "sender": "chiefofstaff@theaiagencyblueprint.com",
   "footer_ref": "config/footer.md",

@@ -25,7 +25,8 @@ The script appends the footer and unsubscribe line from /config/footer.md, adds 
 | 3 | 9 | 30-40 | Breakup, `{{booking_link}}` calendar link. |
 
 - LinkedIn note: under 300 characters, no pitch of price, references the trigger.
-- Sender: chiefofstaff@theaiagencyblueprint.com. Signed Joaquin Garcia, CEO (assumption, see below).
+- Sender: chiefofstaff@theaiagencyblueprint.com. Signature is the Chief of Staff block from /config/footer.md (added by the script). Voice is "we"; the script fails any email using "I", "my" or "me". Joaquin is named as "our CEO" in the call ask.
+- LinkedIn notes are the exception: they go from Joaquin's own account in his voice.
 
 ## Voice
 - Niche A: formal-warm. Greeting "Dear First Last,". Respect for public service, plain about burden. Names the municipality.
@@ -47,6 +48,6 @@ The script appends the footer and unsubscribe line from /config/footer.md, adds 
 - Spanish-language request: route to Angelina (Phase 3, not yet built).
 
 ## Sources / Assumptions (this SOP)
-- Signature "Joaquin Garcia, CEO" from the chiefofstaff mailbox is an assumption; Joaquin to confirm signature style.
+- Chief of Staff signature is role-based with no invented personal name; Joaquin to approve.
 - `{{booking_link}}` is a placeholder until the real booking link is set.
 - Subject lines are lowercase, short, no clickbait.

@@ -1,6 +1,6 @@
 prospect_id,name,title,org,city,niche,email_status,fit,pain,reach,timing,score,tier,trigger_line,trigger_source
-SAMPLE-1,Dana Reyes,Municipal Clerk,Sample Township,"Sample Township, NJ",A,verified (simulated),28,25,20,18,91,A,"Sample Township's posted council minutes appear to be running two meetings behind.",SYNTHETIC: township minutes page
-SAMPLE-2,Marcus Bell,DPW Director,Borough of Example Park,"Example Park, NJ",A,verified (simulated),27,26,20,17,90,A,"Recent flooding in Example Park likely drove a surge of resident calls to public works.",SYNTHETIC: local news item
-SAMPLE-3,Priya Nair,Township Administrator,Mock Township,"Mock Township, NJ",A,verified (simulated),28,22,20,18,88,A,"Mock Township is advertising an open municipal clerk position.",SYNTHETIC: township job posting
+SAMPLE-1,Dana Reyes,Municipal Clerk,Sample Township,"Sample Township, NJ",A,verified (simulated),28,25,20,8,81,A,"Sample Township's posted council minutes appear to be running two meetings behind.",SYNTHETIC: township minutes page
+SAMPLE-2,Marcus Bell,DPW Director,Borough of Example Park,"Example Park, NJ",A,verified (simulated),27,26,20,8,81,A,"Recent flooding in Example Park likely drove a surge of resident calls to public works.",SYNTHETIC: local news item
+SAMPLE-3,Priya Nair,Township Administrator,Mock Township,"Mock Township, NJ",A,verified (simulated),28,22,20,8,78,A,"Mock Township is advertising an open municipal clerk position.",SYNTHETIC: township job posting
 SAMPLE-4,Tom Alvarez,Owner,Alvarez Plumbing & Heating,"Cherry Hill, NJ",B,verified (simulated),26,18,20,10,74,B,"Alvarez Plumbing & Heating is hiring an office coordinator.",SYNTHETIC: company careers page
 SAMPLE-5,Elena Rossi,Operations Manager,Delaware Valley Sample Logistics,"Philadelphia, PA",B,verified (simulated),24,12,20,10,66,B,"Delaware Valley Sample Logistics publishes a customer portal and paperwork requirements for shipments.",SYNTHETIC: company website

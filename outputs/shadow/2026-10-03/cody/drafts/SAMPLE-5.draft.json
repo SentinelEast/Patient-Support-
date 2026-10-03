@@ -13,7 +13,7 @@
       "day": 0,
       "subject": "paperwork questions at Delaware Valley Logistics",
       "greeting": "Hi Elena,",
-      "body": "Delaware Valley Sample Logistics has real paperwork requirements for every shipment, which means your team likely answers the same status and document questions all day. We build AI systems, trained on your own documents, that answer those so your people handle the exceptions. Interested in a free 20-minute call? I can send a 2-minute Loom if you'd rather see it first."
+      "body": "Delaware Valley Sample Logistics has real paperwork requirements for every shipment, which means your team likely answers the same status and document questions all day. We build AI systems, trained on your own documents, that answer those so your people handle the exceptions. Interested in a free 20-minute call with our CEO, Joaquin Garcia? We can send a 2-minute Loom if you'd rather see it first."
     },
     {
       "day": 4,
@@ -25,13 +25,13 @@
       "day": 9,
       "subject": "last note",
       "greeting": "Hi Elena,",
-      "body": "Last note from me. If answering the same customer questions is still eating your day, book a time at {{booking_link}}. No pressure either way, and thanks for reading this far, Elena."
+      "body": "Last note from us. If answering the same customer questions is still eating your day, book a time at {{booking_link}}. No pressure either way, and thanks for reading this far, Elena."
     }
   ],
   "linkedin_note": "Elena, Delaware Valley Sample Logistics clearly runs on paperwork. I build AI systems that answer repeat status and document questions. Happy to connect, no pitch.",
   "sources_assumptions": [
     "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
     "Insight describes how the systems we build work; no results claimed; no case studies exist.",
-    "Signature 'Joaquin Garcia, CEO' and {{booking_link}} are placeholders pending Joaquin's confirmation."
+    "Chief of Staff signature (role-based, no personal name) and {{booking_link}} are placeholders pending Joaquin's approval."
   ]
 }

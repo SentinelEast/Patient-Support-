@@ -32,7 +32,7 @@ Until Joaquin flags Aaron `send-authorized`: write drafts to `/outputs/shadow/<d
 | Fit (title/size/niche) | 0-30 | Decision-maker in niche, size in range = 25-30; adjacent title = 10-20 |
 | Pain signal strength | 0-30 | Sourced, specific, recent = 25-30; generic industry pain = 10-15; none = 0 |
 | Reachability | 0-20 | Verified personal email = 20; verified role-style named = 10; unverified = 0 |
-| Timing | 0-20 | Municipal: calendar-year budgets, so Sep-Nov (next-year budget build) = 15-20; SMB: recent hiring/growth signal = 10-20 |
+| Timing | 0-20 | Municipal: record the fiscal-year type per municipality (`fiscal_year_type`: calendar or state July-June, from the NJ Division of Local Government Services or the municipality's own budget page). Known cycle and within ~90 days before budget introduction = 15-20; known cycle, outside that window = 5-10; **unknown = 8 (neutral)**. SMB: recent hiring/growth signal = 10-20, none = 5 |
 
 **Tiers:** A = 75-100, B = 50-74, C = under 50 (held, not sent). Tier A requires a sourced trigger line (one sentence, factual, with source) for Cody. No source = cap at Tier B.
 
@@ -60,8 +60,10 @@ Verified rate under 90%; reply rate under 1% for 3 days; deliverability alerts.
 - Shared clerk inbox only available: mark Tier C, find named contact; do not use the role address.
 - Multiple contacts at one municipality: send to at most one decision-maker per org per sequence cycle.
 - Unsourced pain signal: do not write a trigger line. Say "none found".
-- Placeholder: log API limits/credit costs here after first live run.
+- Vibe Prospecting: base export costs 1 credit/row (read-only estimate, 2026-10-03); enrichment cost not yet known. Weekly cap and start size are in /config/business.md. Run `estimate-cost` (with enrichment) first and ask Joaquin before exceeding the cap.
+- Vibe preview returned prospects personally located outside NJ and tech companies: add a prospect-location filter and exclude tech categories for niche B.
+- Log other API limits here after the first live run.
 
 ## Sources / Assumptions (this SOP)
-- Municipal fiscal year assumed calendar-year (verify with Joaquin; some NJ entities use other cycles).
+- Municipal fiscal-year type is not assumed. My understanding is NJ municipalities may run on a calendar year or the state July-June year, and school districts run July-June; verify per municipality. Unknown scores neutral on timing.
 - Scoring weights are a starting point; tune after 2 weeks of reply data.

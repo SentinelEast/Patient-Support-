@@ -6,6 +6,7 @@ Single source of truth. Every agent and SOP references this file; none restate i
 
 - Brand: The AI Agency Blueprint
 - Sender: chiefofstaff@theaiagencyblueprint.com (mailbox PENDING connection)
+- Signature: the Chief of Staff block in /config/footer.md (role-based, no invented personal name). Emails speak as "we"; Joaquin is "our CEO" where the call is offered. LinkedIn notes are the exception: they go out from Joaquin's own account and are written in his voice.
 - Footer and unsubscribe: /config/footer.md (verbatim)
 - Retired brand names must never appear anywhere. Enforced by `python execution/brand_scrub.py` (zero hits required; the patterns live only in that script).
 
@@ -89,6 +90,27 @@ Escalation triggers: verified <90%; reply rate <1% for 3 days; deliverability al
 
 Frame 2 min, diagnose 13, present 7, close 3. Sales calls run on Joaquin's calendar via the booking link (PENDING).
 
+**Call-length mismatch to resolve:** outreach promises a free 20-minute call, but the structure above totals 25 minutes. Recommendation: book the free call as 20 minutes with a 10-minute buffer after, and treat the 25-minute structure as the paid-conversation (post-audit/discovery) format, or shorten the structure to 20. Joaquin decides; until then outreach says "20-minute".
+
+## Booking link (recommendation, Joaquin to decide)
+
+Current link is Joaquin's general scheduling page. Recommend replacing it in outreach with a **dedicated "Free 20-Minute Call" link**:
+- Single event type, 20 minutes, only your open sales windows, 10-minute buffer, 24-hour minimum notice.
+- Intake questions: name, organization, role, one line on the biggest manual workload. Feeds Aaron's pre-call brief.
+- Brand-clean page title and description (retired brand names must not appear; check the current page).
+- Source tagging (`?src=apollo`) so Patty can count meetings booked per sequence, and the booking lands in Apollo (Apollo meeting link, or a calendar tool with an Apollo integration) so the touch is logged.
+- Why not the general page: it may expose other meeting types or lengths, carries no source tracking, and a prospect who sees a personal calendar may book the wrong thing.
+Keep the `{{booking_link}}` placeholder in copy until the new link exists.
+
+## Prospecting credit budget (Vibe Prospecting)
+
+- Estimate (read-only preview, no export run): filter = company HQ in NJ, 1-50 employees, owner/founder/manager/C-suite, email available. ~14,970 matching records. Base export cost = 1 credit per row (1,000 rows = 1,000 credits), so **2,500 rows is about 2,500 credits per week** before contact-data enrichment.
+- Enrichment (verified email/phone) is priced separately and was NOT estimated. Aaron runs `estimate-cost` with enrichment before the first spend and reports the number.
+- Cap: **2,500 base credits/week plus enrichment as estimated**. Aaron stops and asks Joaquin before exceeding it.
+- Recommended start: source about 700 rows/week, not 2,500. Sends need ~580 new prospects/week (1,750 / 3 touches) plus ~20% scrub loss. The 2,500 pool target only pays for itself if yield is poor; scale up if verified/Tier A+B yield falls short.
+- Municipal niche A is sourced from Apollo, not Vibe.
+- Preview showed noise: some prospects were personally located outside NJ and some companies were tech. Aaron adds a prospect-location filter, excludes tech categories, and uses city/region filters for the Philadelphia area.
+
 ## Notifications
 
 Every notification goes to BOTH Slack and Telegram. If one channel fails, deliver on the other and log the failure. Telegram connector is not yet confirmed (open item).
@@ -110,7 +132,9 @@ AI chatbot on the Lovable-built website answering resident and inspection-paperw
 - [ ] Provide DOMAIN_1, DOMAIN_2, DOMAIN_3 and confirm none contains the old brand name
 - [ ] Create the 12 mailboxes and start Apollo warm-up (clock for ~14 days)
 - [ ] Email verification tool: NeverBounce or MillionVerifier (default: NeverBounce)
-- [ ] Booking link and Loom account for Email 1 alternative
+- [ ] Decide on a dedicated "Free 20-Minute Call" booking link (see recommendation above) and resolve the 20 vs 25-minute call length; provide Loom account for Email 1 alternative
+- [ ] Approve Chief of Staff signature block in /config/footer.md
+- [ ] Confirm each NJ municipality's fiscal-year type source (see Aaron SOP timing rule)
 - [ ] Telegram bot token and chat ID; Slack channel names
 - [ ] Suppression list: confirm Apollo "do not contact" list is the master
 - [ ] Confirm `{{unsubscribe_link}}` renders in Apollo sequences

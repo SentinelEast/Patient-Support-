@@ -20,7 +20,7 @@ No Apollo writes, no sends. Read-only checks only. Nothing external happened.
 | Email re-verified | sim. | sim. | sim. | sim. | sim. |
 | Role/generic address | no | no | no | no | no |
 | Cody JSON status | PASS | PASS | PASS | PASS | PASS |
-| Footer matches /config/footer.md | yes | yes | yes | yes | yes |
+| Footer + signature match /config/footer.md | yes | yes | yes | yes | yes |
 | Unsubscribe merge var present | yes (render in Apollo preview: unverified) | | | | |
 | Recipient timezone / window | ET, 09:00-16:00 | ET | ET | ET | ET |
 
@@ -43,14 +43,15 @@ In the real run these would NOT be loaded: capacity is 0 and Patty is in shadow.
 >
 > Dear Dana Reyes,
 >
-> Thank you. Here are three times that work for a free 20-minute call:
+> Thank you. Here are three times that work for a free 20-minute call with our CEO, Joaquin Garcia:
 > - {{time_option_1}}
 > - {{time_option_2}}
 > - {{time_option_3}}
 >
 > Or choose your own time here: {{booking_link}}
 >
-> Joaquin Garcia, CEO
+> Chief of Staff
+> Office of Joaquin Garcia, CEO
 >
 > The AI Agency Blueprint | 80 River St., Hoboken, NJ 07030 | 856-254-6000 | www.theaiagencyblueprint.com
 > Not relevant? Reply "unsubscribe" or click here to opt out: {{unsubscribe_link}}

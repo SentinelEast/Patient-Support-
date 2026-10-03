@@ -26,7 +26,6 @@ sys.path.insert(0, os.path.join(ROOT, "execution"))
 from brand_scrub import PATTERNS  # noqa: E402  (retired-name patterns live only there)
 
 SENDER = "chiefofstaff@theaiagencyblueprint.com"
-SIGNATURE = "Joaquin Garcia, CEO"
 WORD_RANGES = {0: (60, 80), 4: (40, 60), 9: (30, 40)}
 LINKEDIN_MAX = 300
 
@@ -37,11 +36,14 @@ BANNED_CLAIMS = ["case study", "case studies", "guarantee", "our clients",
                  "clients like", "we helped", "proven", "%"]
 
 
-def footer_blocks() -> tuple[str, str]:
-    """Return (footer, unsubscribe) from the first two fenced blocks in footer.md."""
+FIRST_PERSON = re.compile(r"\b(I|I'll|I'd|I'm|I've|my|me)\b")
+
+
+def footer_blocks() -> tuple[str, str, str]:
+    """Return (footer, unsubscribe, signature) from the first three fenced blocks in footer.md."""
     text = open(os.path.join(ROOT, "config", "footer.md"), encoding="utf-8").read()
     blocks = re.findall(r"```\n(.*?)\n```", text, re.S)
-    return blocks[0].strip(), blocks[1].strip()
+    return blocks[0].strip(), blocks[1].strip(), blocks[2].strip()
 
 
 def words(s: str) -> int:
@@ -66,6 +68,8 @@ def validate(d: dict, footer: str, unsub: str) -> list[str]:
         for p in BANNED_CLAIMS:
             if p in low:
                 fails.append(f"day {e['day']} banned claim: {p}")
+        if FIRST_PERSON.search(e["body"]):
+            fails.append(f"day {e['day']} uses first-person singular (Chief of Staff voice is \"we\")")
         for pat in PATTERNS:
             if pat.search(e["body"] + e["subject"] + e["greeting"]):
                 fails.append(f"day {e['day']} retired brand string")
@@ -95,11 +99,11 @@ def validate(d: dict, footer: str, unsub: str) -> list[str]:
 
 def main(src: str, dst: str) -> int:
     d = json.load(open(src, encoding="utf-8"))
-    footer, unsub = footer_blocks()
+    footer, unsub, signature = footer_blocks()
     fails = validate(d, footer, unsub)
     for e in d["emails"]:
         e["word_count"] = words(e["body"])
-        e["full_text"] = (f"{e['greeting']}\n\n{e['body']}\n\n{SIGNATURE}\n\n"
+        e["full_text"] = (f"{e['greeting']}\n\n{e['body']}\n\n{signature}\n\n"
                           f"{footer}\n{unsub}")
     d["sender"] = SENDER
     d["footer_ref"] = "config/footer.md"

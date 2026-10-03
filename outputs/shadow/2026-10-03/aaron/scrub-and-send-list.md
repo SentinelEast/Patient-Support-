@@ -13,7 +13,7 @@ All 5 prospects are SYNTHETIC. No Apollo, Vibe Prospecting or verifier calls wer
 Verified rate: 7/7 simulated (no real verifier run), so the 90% escalation is not tested here.
 
 ## Scores
-See `scored-prospects.csv`. Tier mix: 3 x A, 2 x B, 0 x C. Rubric and weights from /sops/aaron-sop.md (fit 30, pain 30, reach 20, timing 20). Municipal timing scores high for early October (calendar-year budget build, assumption).
+See `scored-prospects.csv`. Tier mix: 3 x A (78-81), 2 x B (66, 74), 0 x C. Rubric and weights from /sops/aaron-sop.md (fit 30, pain 30, reach 20, timing 20). Municipal timing is scored 8 (neutral) because each sample's fiscal-year type is unknown; it is no longer assumed to be calendar-year.
 
 ## Mode 3: Daily send list for next business day (Mon 2026-10-05)
 
@@ -30,7 +30,7 @@ Not exercised: no week of metrics exists. Will be exercised the first Sunday aft
 
 ## Sources / Assumptions
 - Prospects, orgs, emails and trigger signals are fictional; scores show the rubric working, not market data.
-- Municipal fiscal year assumed calendar-year; Joaquin to verify.
+- Municipal fiscal-year type unknown for all samples, so timing is neutral (8).
 - Questions for Joaquin:
   - Confirm the title list for niche A and the SMB industry list for niche B.
   - Approve a Vibe Prospecting credit budget per week before the first live sourcing run.

@@ -13,7 +13,7 @@
       "day": 0,
       "subject": "resident calls after the flooding",
       "greeting": "Dear Marcus Bell,",
-      "body": "After the recent flooding in the Borough of Example Park, I expect your public works office fielded a wave of the same resident questions: road closures, debris pickup, who to call. We build AI response systems, trained on your own notices and procedures, that answer those routine questions while your crew handles the real emergencies. Would a free 20-minute call be useful? I can also send a 2-minute Loom."
+      "body": "After the recent flooding in the Borough of Example Park, we expect your public works office fielded a wave of the same resident questions: road closures, debris pickup, who to call. We build AI response systems, trained on your own notices and procedures, that answer those routine questions while your crew handles the real emergencies. Would a free 20-minute call with our CEO, Joaquin Garcia, be useful? We can also send a 2-minute Loom."
     },
     {
       "day": 4,
@@ -25,13 +25,13 @@
       "day": 9,
       "subject": "closing the loop",
       "greeting": "Dear Marcus Bell,",
-      "body": "Closing the loop on my end. If routine resident calls are still crowding out field work, you can pick a time at {{booking_link}}. Thank you for the work you do for the Borough."
+      "body": "Closing the loop on our end. If routine resident calls are still crowding out field work, you can pick a time at {{booking_link}}. Thank you for the work you do for the Borough."
     }
   ],
   "linkedin_note": "Marcus, after the recent flooding I imagine public works took a lot of repeat calls. I build AI systems that answer routine resident questions so crews can focus. Glad to connect, no pitch.",
   "sources_assumptions": [
     "SYNTHETIC SAMPLE prospect for shadow dry-run; person, org and signal are fictional.",
     "Insight describes how the systems we build work; no results claimed; no case studies exist.",
-    "Signature 'Joaquin Garcia, CEO' and {{booking_link}} are placeholders pending Joaquin's confirmation."
+    "Chief of Staff signature (role-based, no personal name) and {{booking_link}} are placeholders pending Joaquin's approval."
   ]
 }
