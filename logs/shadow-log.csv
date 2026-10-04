@@ -8,3 +8,7 @@ date,agent,item,approved,edits,error_severity
 2026-10-03,cody,DRYRUN SAMPLE-5 sequence,pending,,
 2026-10-03,patty,DRYRUN send-plan-and-replies.md,pending,,
 2026-10-04,patty,capacity-check.md (capacity_tomorrow=0),pending,,
+2026-10-04,aaron,scored-prospects.csv (10 real-data trial; 5A/5B),pending,,
+2026-10-04,aaron,scrub-log.md,pending,,
+2026-10-04,aaron,send-list.md (no list; capacity 0),pending,,
+2026-10-04,aaron,weekly-memo.md (baseline),pending,,
