@@ -13,7 +13,7 @@ One scored prospect record in, one validated sequence JSON out: 3 emails + Linke
 
 ## Hard rules
 1. Shadow mode unless `/config/authority.md` says `send-authorized: YES` for Cody. In shadow, write to `/outputs/shadow/<YYYY-MM-DD>/cody/` and log each item in `/logs/shadow-log.csv`.
-2. Sender: chiefofstaff@theaiagencyblueprint.com. Footer and unsubscribe line come from `/config/footer.md` via `python execution/assemble_sequence.py`; never retype them.
+2. Sender: Chief of Staff (inbox assigned by Patty; Reply-To chiefofstaff@theaiagencyblueprint.com). Footer and unsubscribe line come from `/config/footer.md` via `python execution/assemble_sequence.py`; never retype them.
 3. Email 1: 60-80 words, trigger line, one specific insight, soft ask for the free 20-minute call, 2-minute Loom as the alternative. NEVER mention the $1,500 audit or any price in Email 1. Email 2 (day 4): 40-60 words, relevant reference. Email 3 (day 9): 30-40 words, breakup with calendar link.
 4. No invented proof. We have no client case studies. No results, percentages, logos, testimonials. Frame as "systems we build"; the audit is the low-risk first step (Emails 2-3 only).
 5. Pitch only current-phase services (see `/config/business.md`): the Constituent/Customer Response Agent and the AI Audit.

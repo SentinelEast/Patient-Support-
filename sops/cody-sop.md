@@ -25,7 +25,7 @@ The script appends the footer and unsubscribe line from /config/footer.md, adds 
 | 3 | 9 | 30-40 | Breakup, `{{booking_link}}` calendar link. |
 
 - LinkedIn note: under 300 characters, no pitch of price, references the trigger.
-- Sender: chiefofstaff@theaiagencyblueprint.com. Signature is the Chief of Staff block from /config/footer.md (added by the script). Voice is "we"; the script fails any email using "I", "my" or "me". Joaquin is named as "our CEO" in the call ask.
+- Sender: Chief of Staff (inbox assigned by Patty; Reply-To chiefofstaff@theaiagencyblueprint.com). Signature is the Chief of Staff block from /config/footer.md (added by the script). Voice is "we"; the script fails any email using "I", "my" or "me". Joaquin is named as "our CEO" in the call ask.
 - LinkedIn notes are the exception: they go from Joaquin's own account in his voice.
 
 ## Voice

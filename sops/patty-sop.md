@@ -11,7 +11,7 @@ Until Joaquin flags Patty `send-authorized`: draft the send plan, reply drafts a
 ## Daily steps
 
 ### 0. Capacity check (09:00 ET, before Aaron builds the list)
-1. List the 12 inboxes in Apollo (3 domains x 4 mailboxes). For each: connected? warm-up complete (~14 days)? paused? bounce rate? spam complaints?
+1. List the connected inboxes with `apollo_email_accounts_index`. It returns only id, address, type, active, default, created_at and last_synced_at (verified 2026-10-04): it does NOT expose warm-up status, send limits, bounce rate or spam complaints. Get those from the Apollo UI/analytics, or ask Joaquin. Rule until verified: an inbox counts as warmed only after Mailwarming has been on for 14 days or Joaquin confirms it; exclude the primary-domain mailbox always.
 2. Per-inbox capacity: warmed and healthy = 30; still warming = its current warm-up limit; paused/unwarmed/unconnected = 0.
 3. `capacity_tomorrow = min(sum of inbox capacities, 350, ramp cap from /config/authority.md)`.
 4. Send `capacity_tomorrow` and the per-domain breakdown to Aaron. If a whole domain is down, flag it and recommend a spare domain at that point. Do not recommend domains otherwise.
@@ -20,7 +20,7 @@ Until Joaquin flags Patty `send-authorized`: draft the send plan, reply drafts a
 Re-verify every email on the send list. Unverified or role/generic addresses go back to Aaron. Check against the suppression list.
 
 ### 2. Load into Apollo sequences
-- Preconditions: Cody's JSON status PASS; footer and Chief of Staff signature match /config/footer.md exactly; unsubscribe merge variable renders in preview; sender is chiefofstaff@theaiagencyblueprint.com.
+- Preconditions: Cody's JSON status PASS; footer and Chief of Staff signature match /config/footer.md exactly; unsubscribe merge variable renders in preview; sender is one of the 12 sending inboxes (never the primary-domain mailbox), with Reply-To chiefofstaff@theaiagencyblueprint.com.
 - Stagger across healthy inboxes, max 30 per inbox per day, 350 total, never above `capacity_tomorrow`.
 - Send during business hours in the recipient's timezone (NJ and PA are Eastern).
 - Sequence timing: Email 1 day 0, Email 2 day 4, Email 3 day 9. Follow-up touches count against daily capacity.

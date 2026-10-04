@@ -27,7 +27,8 @@ No personal name is invented for the Chief of Staff. Emails are written in the f
 
 ## Sender
 
-- From: chiefofstaff@theaiagencyblueprint.com (connected in Apollo as of 2026-10-03; Mailwarming enabled 2026-10-03)
+- From: one of the 12 sending inboxes (chiefofstaff1-4 on each sending domain, display name "Chief of Staff, The AI Agency Blueprint"), assigned by Patty.
+- Reply-To: chiefofstaff@theaiagencyblueprint.com (assumption, Joaquin to confirm). The primary-domain mailbox is connected in Apollo with Mailwarming on (2026-10-03) for replies and approvals; it is never used for cold sends.
 - Sending inboxes themselves are on DOMAIN_1 to DOMAIN_3 (see /config/business.md). Footer text is identical on every inbox.
 
 ## Checks (Patty runs before loading any sequence)

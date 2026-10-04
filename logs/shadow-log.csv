@@ -7,3 +7,4 @@ date,agent,item,approved,edits,error_severity
 2026-10-03,cody,DRYRUN SAMPLE-4 sequence,pending,,
 2026-10-03,cody,DRYRUN SAMPLE-5 sequence,pending,,
 2026-10-03,patty,DRYRUN send-plan-and-replies.md,pending,,
+2026-10-04,patty,capacity-check.md (capacity_tomorrow=0),pending,,
