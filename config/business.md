@@ -76,6 +76,14 @@ Each domain hosts 4 mailboxes. Joaquin creates all 12 mailboxes after the domain
 
 Retired-brand check on all three names: clean. Setup steps per domain are in /runbook/RUNBOOK.md.
 
+**Rollout plan (Joaquin, 2026-10-04):** 4 sending mailboxes now (the .io batch), then add 4 more, then possibly the last 8, each step funded by first client payments. Apollo plan limits mailboxes per user (alert: 1 per user), so each step needs matching seats or a plan with more mailboxes per user.
+
+| Stage | Mailboxes | Max sends/day | New prospects/week (3-touch) |
+|---|---|---|---|
+| 1 | 4 | 120 | ~200 |
+| 2 | 8 | 240 | ~400 |
+| 3 | 12 | 350 (cap) | ~580 |
+
 **Interim capacity:** until each domain's mailboxes exist and are warm, e.g. with only one domain live, capacity is at most 4 inboxes x 30 = 120/day (about 600 sends/week, roughly 200 new prospects/week on a 3-touch sequence). Patty's capacity check reduces the number automatically; Aaron sizes the list to it. Warm-up for DOMAIN_1 inboxes can start as soon as they exist; do not wait for the other domains.
 
 ## Weekly KPI targets (Aaron compares against)
