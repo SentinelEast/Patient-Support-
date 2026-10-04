@@ -70,7 +70,7 @@ Decisions (2026-10-03): all 12 sending inboxes present as **Chief of Staff** (sa
 |---|---|---|
 | DOMAIN_1 | theaiagentagencyblueprint.com | provided 2026-10-03; spelling has "agent" in it, Joaquin to confirm it is intended; purchase status unconfirmed |
 | DOMAIN_2 | theaiagencyblueprint.org | provided 2026-10-03; purchase status unconfirmed |
-| DOMAIN_3 | theaiagencyblueprint.io | provided 2026-10-03; purchase status unconfirmed |
+| DOMAIN_3 | theaiagencyblueprint.io | FIRST BATCH: chiefofstaff1-4 created and active (Joaquin, 2026-10-04); NOT yet connected to Apollo (verified 2026-10-04) |
 
 Each domain hosts 4 mailboxes. Joaquin creates all 12 mailboxes after the domains exist. `execution/brand_scrub.py` re-checks this table once real values are entered. Each new domain needs SPF, DKIM and DMARC before warm-up.
 
@@ -146,7 +146,7 @@ Done:
 
 Open (see the numbered list in chat for the current questions):
 - [ ] Confirm the three domains are purchased and DOMAIN_1's spelling ("agent") is intended
-- [ ] Create the 12 mailboxes, connect to Apollo, start warm-up (~14 days)
+- [ ] Connect chiefofstaff1-4 @ .io to Apollo (OAuth, one at a time), turn Mailwarming on, limit 30/day; then create the other 8 mailboxes
 - [ ] Decide whether to keep the 2-minute Loom offer in Email 1 (Joaquin would record them on request)
 - [ ] Telegram: bot token received in chat but UNVERIFIED (api.telegram.org blocked from this environment); chat ID still needed; enter token only in Make or .env, never the repo; revoke and reissue the token since it was pasted in chat
 - [ ] Verify the opt-out link renders in an Apollo test email
