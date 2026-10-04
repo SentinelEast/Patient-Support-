@@ -20,7 +20,7 @@ Until Joaquin flags Patty `send-authorized`: draft the send plan, reply drafts a
 Re-verify every email on the send list. Unverified or role/generic addresses go back to Aaron. Check against the suppression list.
 
 ### 2. Load into Apollo sequences
-- Preconditions: Cody's JSON status PASS; footer and Chief of Staff signature match /config/footer.md exactly; unsubscribe merge variable renders in preview; sender is one of the 12 sending inboxes (never the primary-domain mailbox), with Reply-To chiefofstaff@theaiagencyblueprint.com.
+- Preconditions: Cody's JSON status PASS; footer and Chief of Staff signature match /config/footer.md exactly; unsubscribe merge variable renders in preview; sender is one of the 12 sending inboxes (never the primary-domain mailbox), with no Reply-To override (replies land in the sending inbox so Apollo logs them).
 - Stagger across healthy inboxes, max 30 per inbox per day, 350 total, never above `capacity_tomorrow`.
 - Send during business hours in the recipient's timezone (NJ and PA are Eastern).
 - Sequence timing: Email 1 day 0, Email 2 day 4, Email 3 day 9. Follow-up touches count against daily capacity.

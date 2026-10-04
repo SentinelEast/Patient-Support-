@@ -25,7 +25,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "execution"))
 from brand_scrub import PATTERNS  # noqa: E402  (retired-name patterns live only there)
 
-SENDER = "Chief of Staff, The AI Agency Blueprint (inbox assigned by Patty); Reply-To chiefofstaff@theaiagencyblueprint.com"
+SENDER = "Chief of Staff, The AI Agency Blueprint (inbox assigned by Patty)"
 WORD_RANGES = {0: (60, 80), 4: (40, 60), 9: (30, 40)}
 LINKEDIN_MAX = 300
 

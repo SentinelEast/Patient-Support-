@@ -144,6 +144,12 @@ Done:
 - [x] Cal.com booking link verified
 - [x] Primary domain and retired-brand domain excluded from sending
 
+Findings 2026-10-04:
+- Apollo plan limit: "Your plan can only link 1 mailbox per user." The account has 1 user (Joaquin), who already has the primary-domain mailbox linked. 12 sending mailboxes need either a plan that allows more mailboxes per user, or 12 users/seats. Joaquin to check pricing at the upgrade link and decide.
+- Apollo's account setting already appends an unsubscribe link (template token `<%Unsubscribe%>`, include-unsubscribe-link ON). Our custom `{{unsubscribe_link}}` line in /config/footer.md may not be a valid Apollo variable. Resolve with the test email before any send (risk: raw text, or two unsubscribe lines).
+- Open/click tracking are OFF in Apollo (good for deliverability).
+- Reply-To override dropped: replies must land in the sending inbox for Apollo to log them.
+
 Open (see the numbered list in chat for the current questions):
 - [ ] Confirm the three domains are purchased and DOMAIN_1's spelling ("agent") is intended
 - [ ] Connect chiefofstaff1-4 @ .io to Apollo (OAuth, one at a time), turn Mailwarming on, limit 30/day; then create the other 8 mailboxes
