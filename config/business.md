@@ -129,6 +129,8 @@ VERIFIED by Joaquin 2026-10-03 (20 minutes, brand-clean, correct calendar, buffe
 
 Every notification goes to BOTH Slack and Telegram. If one channel fails, deliver on the other and log the failure. **Telegram is live** (verified 2026-10-06): send with `python execution/notify_telegram.py "<message>"`, which reads `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` from the environment. In shadow mode the script only allows "N drafts ready for review" and refuses anything else; no prospect data ever goes to Telegram.
 
+**Slack channel:** `#agent-ops` (ID `C0C74B5UPS6`, public, verified 2026-10-06). Shadow mode: only "N drafts ready for review" style counts, no prospect data. Open item: a private `#agent-alerts` channel exists but the Slack connector cannot see it; move alerts there before Patty goes live, once the connector can reach it, and archive `#agent-ops`.
+
 ## Output standard (all agents)
 
 1. Every output ends with a **Sources / Assumptions** note: where each fact came from (Apollo record ID, URL, document) and what was assumed. Unverifiable facts are removed, not softened.
