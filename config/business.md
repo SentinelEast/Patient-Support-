@@ -127,7 +127,7 @@ VERIFIED by Joaquin 2026-10-03 (20 minutes, brand-clean, correct calendar, buffe
 
 ## Notifications
 
-Every notification goes to BOTH Slack and Telegram. If one channel fails, deliver on the other and log the failure. Telegram connector is not yet confirmed (open item).
+Every notification goes to BOTH Slack and Telegram. If one channel fails, deliver on the other and log the failure. **Telegram is live** (verified 2026-10-06): send with `python execution/notify_telegram.py "<message>"`, which reads `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` from the environment. In shadow mode the script only allows "N drafts ready for review" and refuses anything else; no prospect data ever goes to Telegram.
 
 ## Output standard (all agents)
 
@@ -162,7 +162,8 @@ Open (see the numbered list in chat for the current questions):
 - [ ] Confirm the three domains are purchased and DOMAIN_1's spelling ("agent") is intended
 - [ ] Connect chiefofstaff1-4 @ .io to Apollo (OAuth, one at a time), turn Mailwarming on, limit 30/day; then create the other 8 mailboxes
 - [ ] Decide whether to keep the 2-minute Loom offer in Email 1 (Joaquin would record them on request)
-- [ ] Telegram: bot token received in chat but UNVERIFIED (api.telegram.org blocked from this environment); chat ID still needed; enter token only in Make or .env, never the repo; revoke and reissue the token since it was pasted in chat
+- [x] Telegram: live and verified 2026-10-06 (token and chat ID set as environment variables, test message delivered)
+- [ ] Telegram: the bot token was pasted in chat earlier; revoke and reissue it in BotFather, then update `TELEGRAM_BOT_TOKEN`
 - [ ] Verify the opt-out link renders in an Apollo test email
 - [ ] Confirm the email verification tool (default NeverBounce) and the Apollo do-not-contact list as master suppression list
 - [ ] Review the 8 dry-run items (optional calibration, outputs/shadow/2026-10-03/)
