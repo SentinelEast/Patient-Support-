@@ -13,3 +13,6 @@ date,agent,item,approved,edits,error_severity
 2026-10-04,aaron,send-list.md (no list; capacity 0),pending,,
 2026-10-04,aaron,weekly-memo.md (baseline),pending,,
 2026-10-06,patty,capacity-check.md (capacity_tomorrow=0; .io 1-4 connected, warming),pending,,
+2026-10-06,aaron,scored-prospects.csv (26 trial; 12A/14B; all Tier C),pending,,
+2026-10-06,aaron,scrub-log.md,pending,,
+2026-10-06,aaron,send-list.md (Wed 10-07; slots=0; 0 filled; 26 pool all Tier C),pending,,
