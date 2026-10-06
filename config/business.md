@@ -5,7 +5,7 @@ Single source of truth. Every agent and SOP references this file; none restate i
 ## Identity and sender
 
 - Brand: The AI Agency Blueprint
-- Sender: chiefofstaff@theaiagencyblueprint.com. Connected in Apollo as a Gmail account (verified 2026-10-03). Mailwarming ENABLED 2026-10-03 (approved by Joaquin). Apollo send limits on this mailbox: 50/day, 6/hour, 10-minute delay; Patty enforces our 30/day cap.
+- Sender (DECIDED by Joaquin 2026-10-06): the sending inboxes on DOMAIN_3, chiefofstaff1-4@theaiagencyblueprint.io (more on DOMAIN_1-2 later). The primary mailbox chiefofstaff@theaiagencyblueprint.com is NEVER used for cold sends; it is connected in Apollo as a Gmail account (verified 2026-10-03). Mailwarming ENABLED 2026-10-03 (approved by Joaquin). Apollo send limits on this mailbox: 50/day, 6/hour, 10-minute delay; Patty enforces our 30/day cap.
 - Signature (APPROVED by Joaquin): the Chief of Staff block in /config/footer.md (role-based, no invented personal name). Emails speak as "we"; Joaquin is "our CEO" where the call is offered. LinkedIn notes are the exception: they go out from Joaquin's own account and are written in his voice.
 - Footer and unsubscribe: /config/footer.md (verbatim)
 - Retired brand names must never appear anywhere. Enforced by `python execution/brand_scrub.py` (zero hits required; the patterns live only in that script).
