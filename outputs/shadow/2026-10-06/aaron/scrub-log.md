@@ -34,3 +34,16 @@ Blockers
 
 ## Sources / Assumptions
 - Sources: Vibe fetch-entities and enrich-prospects estimate, 2026-10-06. Assumed estimate pricing holds at export.
+
+## Addendum 2: Vibe niche B tightened search, RE-ESTIMATE ONLY (Joaquin option A)
+- Fresh search (no charge): session_16_fast_toads_stealthily_whispered, table fetch_prospects_kmf300kd; 5,735 matches, 20 rows pulled, only 5 viewable (no show-sample tool in this run).
+- Filters applied: prospect region US-NJ; job level owner/founder; size 1-10 and 11-50; email available; excluded LinkedIn categories (IT services, software, internet, business consulting, advertising, marketing services, staffing, non-profit, network security, information services, data analytics). Category strings were typed from my own knowledge, NOT autocomplete (no autocomplete tool in this session); unverified that each matched.
+- NOT applied (gaps): Philadelphia-area PA (city_region needs autocomplete, unavailable; US-PA statewide rejected as too wide; counties not supported by the tool), operations-manager title (job_title needs autocomplete). So this pull is NJ only.
+- Estimate, email-only enrichment (view_ddyasbky): 20 base + 40 email (2/row) = 60 credits (3/row). Unchanged per-row rate; ~700 rows = ~2,100 credits.
+- 5 viewable rows (company, city): Remote growth partners, Montclair NJ; Tribaja, Lawrence Township NJ; Harbor, Cedar Grove NJ; Lark creatives, Elmwood Park NJ; Struck studio, Westfield NJ.
+- Fit concerns: Remote growth partners (growth/consulting-like), Lark creatives (creative agency), Struck studio (founder/CTO, studio, likely tech/design) look like the excluded types; Tribaja and Harbor unknown. 3 of 5 likely misfits, so exclusion did not hold; 5-row sample only. Titles are CEO/founder, not trades/logistics/healthcare/property types the SOP targets.
+- Not exported, not enriched, no Apollo writes. Credits used: 0. Joaquin to confirm any export directly.
+
+## Sources / Assumptions
+- Sources: Vibe fetch-entities and enrich-prospects estimate, 2026-10-06 (tables above).
+- Assumed: industry from company name only (websites masked); estimate pricing holds at export; excluded-category strings matched Vibe values.
