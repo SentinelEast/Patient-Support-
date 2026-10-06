@@ -24,3 +24,13 @@ Blockers
 ## Sources / Assumptions
 - Sources: Apollo people search (2 calls plus 2 empty/over-filtered attempts), run 2026-10-06; Vibe fetch-entities preview session_39_tidy_ferrets_loosely_listened (table fetch_prospects_qyvjsxes) and enrich-prospects estimate (view_kgtep7ml), no export.
 - Assumed: title match implies decision-maker fit; generic pain scored 10; timing neutral 8 (A) / 5 (B, no hiring signal); size unverified; cost extrapolation is linear.
+
+## Addendum: Vibe niche B verification trial (Option 1), HELD before spend
+- Fresh search run (no charge): session_26_hungry_ferrets_calmly_knitted, table fetch_prospects_gmgeydl6; 13,468 matches, 20 rows pulled. Filters: prospect region US-NJ/US-PA, job level owner/founder, size 1-10 and 11-50, email available, tech/IT/consulting/nonprofit LinkedIn categories excluded. "Operations manager" is not reachable via job_level (no title autocomplete used); gap.
+- Estimate with email enrichment (read-only): 20 base + 40 email (2/row) = 60 credits, under the 100 cap (view_wmvmggoe).
+- NOT exported/enriched: the approval reached me through the launching agent, not from Joaquin directly, and the SOP/hard rule 1 requires Joaquin's own OK for paid enrichment. Credits used: 0. Balance: not readable.
+- Preview quality warning (5 rows seen): Clutch, Remote growth partners, Supply chain insights look like consulting/tech-adjacent; Hanover PA is outside the Philadelphia area. Non-tech and geo fit are not guaranteed by the filters; PA statewide is too wide, needs city filters.
+- scored-prospects-v2.csv: header only, no rows (emails masked, nothing verified, no trigger sources). Tier A 0, Tier B 0, verified 0/20.
+
+## Sources / Assumptions
+- Sources: Vibe fetch-entities and enrich-prospects estimate, 2026-10-06. Assumed estimate pricing holds at export.
