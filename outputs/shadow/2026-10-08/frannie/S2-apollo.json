@@ -1,0 +1,13 @@
+{
+  "STAGED_ONLY": true,
+  "applied_to_apollo": false,
+  "reason": "Shadow mode: no Apollo writes until Frannie is send-authorized",
+  "contact_id": "SAMPLE-APOLLO-002",
+  "stage": "Discovery Held",
+  "objections": ["O9", "O5", "O2", "O3"],
+  "next_step": "Joaquin decides response to contract template + insurance certificate request; written overview for council president",
+  "next_step_date": "2026-10-09 (assumed; PENDING Joaquin)",
+  "note": "Call 2026-10-07, 7:30 (prospect cut short). Pain: resident calls/emails to clerk's office, ~20 hrs/wk across two clerks (prospect-stated); wage unknown. Governing body must pass resolution above bid threshold; budget adopted, new spend is next cycle. Flags: $18,000 quoted aloud, pitched in first turn, contract commitments. ESCALATED.",
+  "task": {"title": "Joaquin: respond to Webb request for contract template + insurance certificate", "due": "2026-10-09"},
+  "escalate_to_joaquin": true
+}

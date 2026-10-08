@@ -1,0 +1,14 @@
+{
+  "files": [
+    "r2/process_diagram-primary.svg",
+    "r2/process_diagram-alternate.svg"
+  ],
+  "placeholder_brand_settings": [
+    "Primary color",
+    "Accent color",
+    "Heading font",
+    "Body font"
+  ],
+  "footer_source": "config/footer.md",
+  "client_name_used": false
+}

@@ -17,9 +17,9 @@ Critical errors: wrong recipient; wrong name/city; fabricated fact; wrong brand 
 | Aaron | 1 | shadow (not started) | - | 0/10 | 0 | NO |
 | Cody | 1 | shadow (not started) | - | 0/10 | 0 | NO |
 | Patty | 1 | shadow (not started) | - | 0/10 | 0 | NO |
-| Frannie | 2 | not built | - | - | - | NO |
-| Mark | 2 | not built | - | - | - | NO |
-| Dolly | 2 | not built | - | - | - | NO |
+| Frannie | 2 | shadow | 2026-10-08 | 0/10 | 0 | NO |
+| Mark | 2 | shadow | 2026-10-08 | 0/10 | 0 | NO |
+| Dolly | 2 | shadow | 2026-10-08 | 0/10 | 0 | NO |
 | Vicky | 3 | not built | - | - | - | NO |
 | Jerry | 3 | not built | - | - | - | NO |
 | Maya | 3 | not built | - | - | - | NO |

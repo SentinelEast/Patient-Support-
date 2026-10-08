@@ -26,7 +26,34 @@ Sunday: Aaron weekly review > Monday memo
 | 17:30 | Patty | Dashboard | Apollo stats | Sends, opens, replies, positive reply rate, meetings, bounces, inbox health |
 | Sun 19:00 | Aaron | Mode 4 WEEKLY REVIEW | All agents' metrics | One-page Monday memo (worst metric, one fix, "the one thing not to do") |
 
-Phase 2/3 agents (Frannie, Mark, Dolly, Vicky, Jerry, Maya, Angelina) run on demand only. Aaron also produces pre-call briefs on request.
+Phase 2 agents run on demand (see Phase 2 pipeline below). Phase 3 agents (Vicky, Jerry, Maya, Angelina) are not built. Aaron also produces pre-call briefs on request.
+
+## Phase 2 pipeline (on demand)
+
+```
+Call ends / transcript arrives
+   > Frannie (coach note, objection log, email draft, Apollo update staged)
+      > [qualified call or ready to buy] Mark (3 options, ROI, timeline, terms)
+         > Cody (proposal narrative)  +  Dolly (visuals)
+            > Joaquin approves  > sent by Joaquin
+Sunday: Frannie weekly pattern summary > Aaron's Mode 4 review
+```
+
+| Trigger | Agent | Job | Input | Output / handoff |
+|---|---|---|---|---|
+| Call ends or transcript/notes arrive | Frannie | Post-call coaching | Transcript/notes + Apollo contact | One-page note, next-step email draft (to Cody), Apollo update (stage, objections, next step, date) |
+| Frannie logs a qualified call, or Joaquin asks | Mark | Proposal scoping | Frannie note, discovery notes, /config/business.md + /config/sales.md | Outline, 3 options, ROI table, timeline, terms; briefs to Cody and Dolly |
+| Request from Mark, Cody or Joaquin | Dolly | Visuals | Brief + /config/brand.md + supporting copy | Primary + alternate asset, editable source |
+| Sunday | Frannie | Weekly pattern summary | The week's calls | `weekly-pattern.md` to Aaron |
+
+Handoff contracts (Phase 2):
+- **Frannie > Mark**: Apollo contact ID, qualified flag, pain in the prospect's own words with timestamps, hours and wage if stated, decision-maker, objections, escalation items.
+- **Frannie > Cody**: email draft (no price above $1,500, no discount). Cody polishes; footer from /config/footer.md.
+- **Mark > Cody**: option structure and rationale; narrative uses only sourced facts.
+- **Mark > Dolly**: format, in-scope workflow steps, approved copy. Client names only after Joaquin approves.
+- **Frannie > Joaquin (Slack + Telegram)**: ready to buy, contract request, custom/municipal contract, anything outside the service menu, discount request. Ready to buy also goes to Mark.
+
+Phase 2 rules: Apollo is the system of record; drafts and staging only; price above $1,500 in writing only; never discount on a first meeting (offer reduced scope); constants in /config/sales.md and /config/brand.md. Authority flags for Frannie, Mark and Dolly start as `shadow` once Joaquin updates /config/authority.md (it still reads "not built").
 
 ## Handoff contracts
 
@@ -57,7 +84,7 @@ During shadow, notifications to Slack + Telegram are limited to "N drafts ready 
 
 1. Approve shadow items (target: under 15 minutes).
 2. Review Patty's 17:30 dashboard.
-3. Take booked calls (25-min structure).
+3. Take booked calls (20-min structure). After each call, review Frannie's note and any Mark outline.
 
 ## Domain and mailbox setup (per sending domain; Joaquin does these, 12 mailboxes total)
 
@@ -78,9 +105,9 @@ Run `python execution/brand_scrub.py` before any commit and before any template 
 ```
 .claude/agents/   one subagent per agent
 sops/             one SOP per agent (directive layer)
-config/           business.md, authority.md, footer.md
+config/           business.md, sales.md, brand.md, authority.md, footer.md
 runbook/          this file
-execution/        deterministic scripts (brand_scrub.py)
+execution/        deterministic scripts (brand_scrub.py, assemble_sequence.py, call_analyzer.py, roi_calc.py, dolly_build.py, asset_check.py)
 outputs/shadow/   drafts awaiting approval
 outputs/live/     post-authorization outputs
 logs/             shadow-log.csv

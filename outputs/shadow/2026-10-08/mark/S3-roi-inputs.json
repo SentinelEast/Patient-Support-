@@ -1,0 +1,7 @@
+{"hours_per_week": 25, "hours_source": "S3 transcript 00:36 (Tom Alvarez: 25 hours a week between two staff)",
+ "hourly_cost": 22, "cost_source": "S3 transcript 00:36 ($22 an hour each, wage only)",
+ "loaded_multiplier": 1.0, "replaced_share": [0.5, 0.7],
+ "options": [
+  {"name": "AI Audit", "one_time": 1500, "monthly": 0, "delivery": "7 business days", "price_source": "config/business.md"},
+  {"name": "AI Operations Install", "one_time": 18000, "monthly": 0, "delivery": "21 days", "price_source": "config/business.md"},
+  {"name": "Install + Managed Operations", "one_time": 18000, "monthly": 2400, "delivery": "21 days + ongoing", "price_source": "config/business.md (low end of $2,400-$4,800/mo)"}]}

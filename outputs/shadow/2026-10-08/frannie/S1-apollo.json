@@ -1,0 +1,13 @@
+{
+  "STAGED_ONLY": true,
+  "applied_to_apollo": false,
+  "reason": "Shadow mode: no Apollo writes until Frannie is send-authorized",
+  "contact_id": "SAMPLE-APOLLO-001",
+  "stage": "Qualified - Proposal Needed",
+  "objections": ["O10", "O3", "O8", "O5"],
+  "next_step": "Mark builds proposal options; Joaquin approves; written proposal sent; Joaquin follow-up",
+  "next_step_date": "2026-10-09",
+  "note": "Call 2026-10-07, 18 min. Pain: tenant calls/emails, 15 hrs/wk at $28/hr (prospect-stated). Decision-maker: owner. Objections: prior bad auto-reply (wrong hours), trust, wants accountant review. Prospect talk share 54.2%.",
+  "task": {"title": "Follow up on written proposal (Dana Reyes)", "due": "2026-10-09"},
+  "notes_on_fields": "Apollo has no custom fields for objections or next step (only 'Qualify Contact'); these go in the note and task."
+}

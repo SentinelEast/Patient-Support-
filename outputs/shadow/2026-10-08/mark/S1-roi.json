@@ -1,0 +1,105 @@
+{
+  "status": "OK",
+  "inputs": {
+    "hours_per_week": 15,
+    "hours_source": "S1 transcript 00:48 (Dana Reyes: Priya, about 15 hours a week)",
+    "hourly_cost": 28,
+    "cost_source": "S1 transcript 00:48 ($28 an hour, wage only)",
+    "loaded_multiplier": 1.0,
+    "replaced_share": [
+      0.5,
+      0.7
+    ],
+    "options": [
+      {
+        "name": "AI Audit",
+        "one_time": 1500,
+        "monthly": 0,
+        "delivery": "7 business days",
+        "price_source": "config/business.md"
+      },
+      {
+        "name": "AI Operations Install",
+        "one_time": 18000,
+        "monthly": 0,
+        "delivery": "21 days",
+        "price_source": "config/business.md"
+      },
+      {
+        "name": "Install + Managed Operations",
+        "one_time": 18000,
+        "monthly": 2400,
+        "delivery": "21 days + ongoing",
+        "price_source": "config/business.md (low end of $2,400-$4,800/mo)"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "option": "AI Audit",
+      "replaced_share": 0.5,
+      "hours_replaced_per_week": null,
+      "annual_savings": null,
+      "monthly_savings": null,
+      "one_time": 1500,
+      "monthly_fee": 0,
+      "net_monthly": null,
+      "payback_months": "n/a (diagnostic, no hours replaced)"
+    },
+    {
+      "option": "AI Operations Install",
+      "replaced_share": 0.5,
+      "hours_replaced_per_week": 7.5,
+      "annual_savings": 10920,
+      "monthly_savings": 910,
+      "one_time": 18000,
+      "monthly_fee": 0,
+      "net_monthly": 910,
+      "payback_months": 19.8
+    },
+    {
+      "option": "Install + Managed Operations",
+      "replaced_share": 0.5,
+      "hours_replaced_per_week": 7.5,
+      "annual_savings": 10920,
+      "monthly_savings": 910,
+      "one_time": 18000,
+      "monthly_fee": 2400,
+      "net_monthly": -1490,
+      "payback_months": "no payback on labor savings alone"
+    },
+    {
+      "option": "AI Audit",
+      "replaced_share": 0.7,
+      "hours_replaced_per_week": null,
+      "annual_savings": null,
+      "monthly_savings": null,
+      "one_time": 1500,
+      "monthly_fee": 0,
+      "net_monthly": null,
+      "payback_months": "n/a (diagnostic, no hours replaced)"
+    },
+    {
+      "option": "AI Operations Install",
+      "replaced_share": 0.7,
+      "hours_replaced_per_week": 10.5,
+      "annual_savings": 15288,
+      "monthly_savings": 1274,
+      "one_time": 18000,
+      "monthly_fee": 0,
+      "net_monthly": 1274,
+      "payback_months": 14.1
+    },
+    {
+      "option": "Install + Managed Operations",
+      "replaced_share": 0.7,
+      "hours_replaced_per_week": 10.5,
+      "annual_savings": 15288,
+      "monthly_savings": 1274,
+      "one_time": 18000,
+      "monthly_fee": 2400,
+      "net_monthly": -1126,
+      "payback_months": "no payback on labor savings alone"
+    }
+  ]
+}
