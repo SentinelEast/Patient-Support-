@@ -4,8 +4,8 @@
   "goal": "Shadow test: debrief the S1 sample call (synthetic)",
   "venture": "aiab",
   "playbook": "post-call",
-  "status": "running",
-  "needs_joaquin": false,
+  "status": "complete",
+  "needs_joaquin": true,
   "waves": [
     [
       "s1"
@@ -58,18 +58,18 @@
     {
       "id": "s5",
       "agent": "Dolly",
-      "status": "running",
+      "status": "passed",
       "retries": 0,
-      "output": null,
-      "note": null
+      "output": "outputs/shadow/2026-10-08/dolly/cos-RUN-20261008-001-s5/",
+      "note": "asset_check PASS x4 (re-run by COS with --client Reyes); no client name; only price on assets is $1,500; Dolly added execution/dolly_table.py (new script, flag)"
     },
     {
       "id": "s6",
       "agent": "COS",
-      "status": "pending",
+      "status": "passed",
       "retries": 0,
-      "output": null,
-      "note": null
+      "output": "outputs/shadow/2026-10-08/chief-of-staff/RUN-20261008-001-report.md",
+      "note": "consolidated report written"
     }
   ],
   "escalations": []

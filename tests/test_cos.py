@@ -175,7 +175,8 @@ class RunStateTests(unittest.TestCase):
 class StatusTests(unittest.TestCase):
     def test_rollup_lists_all_registered_agents(self):
         rows = {r["agent"]: r for r in team_status.status(REPO)}
-        self.assertEqual(len(rows), 10)
+        registered = {"Aaron", "Cody", "Patty", "Frannie", "Mark", "Dolly", "Vicky", "Angelina", "Jerry", "Maya"}
+        self.assertTrue(registered <= set(rows))          # all ten registered agents, plus any logger such as the Chief of Staff
         self.assertTrue(rows["Frannie"]["callable"])
         self.assertFalse(rows["Vicky"]["callable"])
 
