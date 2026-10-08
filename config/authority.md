@@ -10,6 +10,15 @@ Over 10 business days: >=95% of items approved with no edits AND zero critical e
 
 Critical errors: wrong recipient; wrong name/city; fabricated fact; wrong brand or footer; off-phase service pitch. Any critical error resets that agent's 10-day clock.
 
+## Phase 2 exit test (Frannie, Mark, Dolly): item-based (Joaquin, 2026-10-08)
+
+Phase 2 agents run on demand, so the test counts items, not days.
+- Each agent needs **10 real approved items** (Frannie: calls; Mark: proposals; Dolly: assets). Synthetic dry-run items do not count.
+- >=95% approved with no edits AND zero critical errors.
+- A critical error restarts that agent's item count at 0.
+- Joaquin then sets `send-authorized: YES` himself.
+- In the Status table, the "Day" column for Phase 2 agents means items counted (x/10), starting at the first real item.
+
 ## Status
 
 | Agent | Phase | Status | Shadow start | Day | Critical errors | send-authorized |
