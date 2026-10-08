@@ -57,6 +57,24 @@ Phase 2 shadow exit test is item-based: 10 real approved items per agent, >=95% 
 
 Phase 2 rules: Apollo is the system of record; drafts and staging only; price above $1,500 in writing only; never discount on a first meeting (offer reduced scope); constants in /config/sales.md and /config/brand.md. Authority flags for Frannie, Mark and Dolly start as `shadow` once Joaquin updates /config/authority.md (it still reads "not built").
 
+## Chief of Staff (head of agents)
+
+The Chief of Staff conducts the team from the main session with `/cos <goal>`. It is not a subagent (subagents cannot call subagents) and it does not use the Workflow tool. Directive: /sops/chief-of-staff-sop.md. Note: "Chief of Staff" is also the outbound email signature (/config/footer.md); that is a different thing.
+
+```
+Joaquin > Chief of Staff > [Aaron, Cody, Patty, Frannie, Mark, Dolly, + Phase 3 when built]
+```
+
+Conducting loop: intake > classify (`route_request.py`) > pre-flight (authority, phase, inputs) > plan (`plan_run.py`) > delegate in waves (max 6 parallel) > gate each handoff (`check_handoff.py`, one rework, then halt and escalate) > consolidate one report to Joaquin > learn.
+
+Decision rights are in /config/decision-rights.md: the Chief of Staff decides routine operations; Joaquin decides authority flags, phase, prices and terms, contracts, anything external, spend, brand, adding or retiring agents, critical-error resets, anything outside the menu.
+
+Playbooks (/config/playbooks.md): `daily-outbound`, `post-call`, `weekly-review`, `pre-call-brief`, `escalation`; stubs for the other ventures until Joaquin fills /config/ventures.md. The registry (/config/agent-registry.md) lists ten agents; Vicky, Angelina, Jerry and Maya are registered as not built, so requests for them escalate. To add one, follow /docs/adding-an-agent.md.
+
+Records: `logs/cos-runs/<run_id>.json`, `logs/cos-log.csv`; consolidated reports in `outputs/shadow/<date>/chief-of-staff/`.
+
+Shadow: the Chief of Staff is in shadow from its first run. Proposed row for /config/authority.md (Joaquin adds it): `| Chief of Staff | 0 | shadow | 2026-10-08 | 0/10 | 0 | NO |`. Exit test: item-based like Phase 2 (10 real approved run reports, >=95% approved with no edits, zero critical errors).
+
 ## Handoff contracts
 
 - **Aaron > Cody**: Apollo record ID, name, title, org, city, size, niche, tier, trigger line, verified email status.

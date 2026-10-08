@@ -24,7 +24,7 @@ The head of all agents. Joaquin gives it a goal or a standing schedule; it decid
 
 **Ventures it covers**
 1. **The AI Agency Blueprint** (Apollo outreach and sales pipeline). Fully configured in this repo.
-2. **S.E.T. Agent Vault**
+2. **Agent Vault** (the venture's older initials are a retired brand string blocked by `execution/brand_scrub.py`; never write them in the repo. Joaquin to confirm the venture's current name.)
 3. **Pathfinder**
 4. **NJ EDA Grant work**
 
@@ -37,10 +37,10 @@ Only venture 1 has config, SOPs and agents today. For ventures 2-4, do NOT inven
 - Frannie: post-call coaching, objection log, next-step email draft
 - Mark: proposal scoping, three options, ROI
 - Dolly: visuals (covers, diagrams, one-pagers, social graphics)
-- **Four more agents are coming** (Vicky, Jerry, Maya, Angelina; Phase 3), taking the team to ten. They are not built and their roles are not defined in this repo. The Chief of Staff must never call or simulate them, and must not guess their roles. Build the system so adding them is configuration, not code (see "Extensibility" below).
+- **Four more agents are coming** (Phase 3), taking the team to ten. Roles given by Joaquin (2026-10-08): **Vicky** = viral scripture; **Angelina** (Joaquin wrote "Angela"; the repo says Angelina; confirm) = translator; **Jerry** = AI course creator; **Maya** = role not yet decided (`[PENDING: Joaquin]`). None is built. The Chief of Staff must never call or simulate them, and must not guess their roles. Build the system so adding them is configuration, not code (see "Extensibility" below).
 
 **Extensibility (design requirement)**
-- Create `config/agent-registry.md`: one row per agent with name, phase, role (one line), agent file path, SOP path, status (`not built` / `shadow` / `live`, read from `config/authority.md`, never set here), inputs, outputs, and handoff contracts in and out. Register the six current agents from their files. Register Vicky, Jerry, Maya and Angelina as `not built` with role `[PENDING: Joaquin]`.
+- Create `config/agent-registry.md`: one row per agent with name, phase, role (one line), agent file path, SOP path, status (`not built` / `shadow` / `live`, read from `config/authority.md`, never set here), inputs, outputs, and handoff contracts in and out. Register the six current agents from their files. Register Vicky, Jerry, Angelina and Maya as `not built` with the roles above (Maya: `[PENDING: Joaquin]`); add routing keywords for those roles so a request like "translate this" escalates as registered-but-not-built instead of falling through.
 - Everything the Chief of Staff does is driven by the registry plus `config/routing.md` and `config/playbooks.md`: no agent names hard-coded in the scripts. An agent is callable only if it is in the registry, its agent file exists and `config/authority.md` shows it as built. Otherwise the request escalates to Joaquin as "registered but not built".
 - Write `docs/adding-an-agent.md`: the checklist for adding a team member (agent file, SOP, registry row, routing rows, playbook steps, handoff contracts in the runbook, tests, then Joaquin adds the authority row and starts shadow). The Chief of Staff may draft these edits for Joaquin but never applies the authority row or marks an agent live.
 - Plan for ten agents: playbooks must support more than six steps and more than two parallel branches, with a cap of 6 concurrent agent calls per turn.

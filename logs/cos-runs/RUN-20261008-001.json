@@ -1,0 +1,76 @@
+{
+  "run_id": "RUN-20261008-001",
+  "date": "2026-10-08",
+  "goal": "Shadow test: debrief the S1 sample call (synthetic)",
+  "venture": "aiab",
+  "playbook": "post-call",
+  "status": "running",
+  "needs_joaquin": false,
+  "waves": [
+    [
+      "s1"
+    ],
+    [
+      "s2",
+      "s3"
+    ],
+    [
+      "s4",
+      "s5"
+    ],
+    [
+      "s6"
+    ]
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "Frannie",
+      "status": "running",
+      "retries": 0,
+      "output": null,
+      "note": null
+    },
+    {
+      "id": "s2",
+      "agent": "Mark",
+      "status": "pending",
+      "retries": 0,
+      "output": null,
+      "note": null
+    },
+    {
+      "id": "s3",
+      "agent": "Cody",
+      "status": "pending",
+      "retries": 0,
+      "output": null,
+      "note": null
+    },
+    {
+      "id": "s4",
+      "agent": "Cody",
+      "status": "pending",
+      "retries": 0,
+      "output": null,
+      "note": null
+    },
+    {
+      "id": "s5",
+      "agent": "Dolly",
+      "status": "pending",
+      "retries": 0,
+      "output": null,
+      "note": null
+    },
+    {
+      "id": "s6",
+      "agent": "COS",
+      "status": "pending",
+      "retries": 0,
+      "output": null,
+      "note": null
+    }
+  ],
+  "escalations": []
+}
