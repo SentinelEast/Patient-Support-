@@ -50,10 +50,10 @@
     {
       "id": "s4",
       "agent": "Cody",
-      "status": "running",
+      "status": "passed",
       "retries": 0,
-      "output": null,
-      "note": null
+      "output": "outputs/shadow/2026-10-08/cody/cos-RUN-20261008-001-s4-proposal-narrative.md",
+      "note": "prices all match Mark outline; no client name; footer verbatim; verify misses were placeholder/policy text. Flag: letter states 'We do not discount' (Joaquin to decide)"
     },
     {
       "id": "s5",
