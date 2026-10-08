@@ -20,7 +20,8 @@ Rules the router applies on top of this table (see `/config/decision-rights.md`)
 | call_coaching | aiab | coach|talk ratio|objection log|score the call | Frannie | agent | 35 | NO |
 | viral_scripture | aiab | viral scripture|scripture|bible verse|devotional | Vicky | agent | 30 | NO |
 | translation | aiab | translate|translation|spanish|portuguese|in another language | Angelina | agent | 30 | NO |
-| course_creation | aiab | course|curriculum|lesson plan|module outline | Jerry | agent | 30 | NO |
+| client_training_courses | aiab | course|curriculum|lesson plan|module outline|training (video|library|course|module)|loom | Maya | agent | 30 | NO |
+| pr_press | aiab | press release|press|media (outreach|announcement)|publicity|pr announcement | Jerry | agent | 30 | NO |
 | agent_vault_work | vault | agent vault|vault | - | escalate | 40 | YES |
 | pathfinder_work | pathfinder | pathfinder | - | escalate | 40 | YES |
 | njeda_work | njeda | nj eda|eda grant|grant narrative|grant application | - | escalate | 40 | YES |

@@ -16,10 +16,10 @@ To add an agent, follow `/docs/adding-an-agent.md`.
 | Frannie | 2 | Post-call coaching, objection log, next-step email draft, Apollo staging | .claude/agents/frannie.md | sops/frannie-sop.md | repo |
 | Mark | 2 | Proposal scoping: three options, ROI, timeline, terms | .claude/agents/mark.md | sops/mark-sop.md | repo |
 | Dolly | 2 | Visual design: covers, diagrams, one-pagers, social graphics | .claude/agents/dolly.md | sops/dolly-sop.md | repo |
-| Vicky | 3 | Viral scripture content | .claude/agents/vicky.md | sops/vicky-sop.md | Joaquin, 2026-10-08 chat |
-| Angelina | 3 | Translator | .claude/agents/angelina.md | sops/angelina-sop.md | Joaquin, 2026-10-08 chat (he wrote "Angela"; confirm the name) |
-| Jerry | 3 | AI course creator | .claude/agents/jerry.md | sops/jerry-sop.md | Joaquin, 2026-10-08 chat |
-| Maya | 3 | [PENDING: role, Joaquin] | .claude/agents/maya.md | sops/maya-sop.md | not yet decided |
+| Vicky | 3 | Viral scripture content | .claude/agents/vicky.md | sops/vicky-sop.md | Joaquin, 2026-10-08 chat (confirmed) |
+| Angelina | 3 | Translator | .claude/agents/angelina.md | sops/angelina-sop.md | Joaquin, 2026-10-08 chat; name spelled Angelina in the repo and the Blueprint v2 plan |
+| Jerry | 3 | PR / press: press releases and media announcements | .claude/agents/jerry.md | sops/jerry-sop.md | Joaquin, 2026-10-08 chat (confirmed) |
+| Maya | 3 | Course creator: client training and courses | .claude/agents/maya.md | sops/maya-sop.md | Joaquin, 2026-10-08 chat (confirmed) |
 
 ## Handoff contracts
 

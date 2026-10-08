@@ -57,6 +57,18 @@ class RouteTests(unittest.TestCase):
         self.assertEqual(r["owner"], "Angelina")
         self.assertTrue(r["needs_joaquin"])
 
+    def test_confirmed_phase3_roles_route_to_the_right_unbuilt_agent(self):
+        expected = {
+            "write a press release on the Camden win": "Jerry",
+            "build the client training library videos": "Maya",
+            "script a viral scripture reel": "Vicky",
+        }
+        for text, owner in expected.items():
+            r = route(text)
+            self.assertEqual(r["owner"], owner, text)
+            self.assertTrue(r["needs_joaquin"], text)                       # none is built yet
+            self.assertTrue(any("registered but not built" in x for x in r["reasons"]), text)
+
     def test_wrong_or_other_venture_escalates_without_inventing(self):
         for text in ("draft the NJ EDA grant narrative", "update the Pathfinder roadmap"):
             r = route(text)
