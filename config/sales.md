@@ -60,14 +60,15 @@ Frannie logs against these IDs; anything else is logged as `OTHER` with the verb
 |---|---|---|
 | Follow-up cadence after proposal sent | Day 3, day 7, day 13 | SET (2026-10-08) |
 | Proposal expiry | 10 days from send | SET (Joaquin, 2026-10-08) |
-| Deposit | 50% of the Install price, due at signing | SET: 50% (Joaquin); "due at signing" is an assumption |
-| Payment schedule / balance due | Remaining 50% due at the 21-day delivery | SET: "21 days" (Joaquin); reading as balance due at delivery is an assumption |
+| Deposit | 50% of the Install price, due at signing | SET (Joaquin, 2026-10-08) |
+| Payment schedule / balance due | Remaining 50% due at the 21-day delivery | SET (Joaquin, 2026-10-08) |
 | Start-date rule (kickoff after deposit) | Work starts when the deposit clears | SET (Joaquin, 2026-10-08) |
 | Audit fee credit toward Install | NO credit | SET (Joaquin, 2026-10-08) |
-| Audit payment terms (deposit/balance) | PENDING (Audit is $1,500, 7 business days) | PENDING Joaquin |
-| Retainer billing (monthly, start date) | PENDING | PENDING Joaquin |
+| Audit payment terms | $1,500 paid upfront in full | SET (Joaquin, 2026-10-08) |
+| Retainer billing | Monthly, sold as an ADD-ON to the Install (not billed from delivery by default) | SET: add-on (Joaquin, 2026-10-08) |
+| Retainer start date | PENDING (when the first monthly charge begins) | PENDING Joaquin |
 
-A proposal with any PENDING term (Audit payment terms, retainer billing) prints `[PENDING: <term>, Joaquin]` in that spot and cannot leave shadow until filled.
+A proposal with any PENDING term (retainer start date) prints `[PENDING: <term>, Joaquin]` in that spot and cannot leave shadow until filled.
 
 ## ROI inputs (Mark)
 
