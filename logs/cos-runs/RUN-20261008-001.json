@@ -26,15 +26,15 @@
     {
       "id": "s1",
       "agent": "Frannie",
-      "status": "running",
+      "status": "passed",
       "retries": 0,
-      "output": null,
-      "note": null
+      "output": "outputs/shadow/2026-10-08/frannie/cos-RUN-20261008-001-s1-note.md",
+      "note": "gates frannie-mark and frannie-cody passed; 21/21 quotes verified"
     },
     {
       "id": "s2",
       "agent": "Mark",
-      "status": "pending",
+      "status": "running",
       "retries": 0,
       "output": null,
       "note": null
@@ -42,7 +42,7 @@
     {
       "id": "s3",
       "agent": "Cody",
-      "status": "pending",
+      "status": "running",
       "retries": 0,
       "output": null,
       "note": null
