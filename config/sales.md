@@ -58,14 +58,16 @@ Frannie logs against these IDs; anything else is logged as `OTHER` with the verb
 
 | Term | Value | Status |
 |---|---|---|
-| Follow-up cadence after proposal sent | Day 3, day 7, day 13 | SET (brief 2026-10-08) |
-| Proposal expiry | PENDING (days from send) | PENDING Joaquin |
-| Deposit | PENDING (amount or %, due when) | PENDING Joaquin |
-| Payment schedule / balance due | PENDING | PENDING Joaquin |
-| Delivery timeline per service | Audit 7 business days; Install 21 days; retainer ongoing (business.md) | SET |
-| Start-date rule (kickoff after deposit) | PENDING | PENDING Joaquin |
+| Follow-up cadence after proposal sent | Day 3, day 7, day 13 | SET (2026-10-08) |
+| Proposal expiry | 10 days from send | SET (Joaquin, 2026-10-08) |
+| Deposit | 50% of the Install price, due at signing | SET: 50% (Joaquin); "due at signing" is an assumption |
+| Payment schedule / balance due | Remaining 50% due at the 21-day delivery | SET: "21 days" (Joaquin); reading as balance due at delivery is an assumption |
+| Start-date rule (kickoff after deposit) | Work starts when the deposit clears | SET (Joaquin, 2026-10-08) |
+| Audit fee credit toward Install | NO credit | SET (Joaquin, 2026-10-08) |
+| Audit payment terms (deposit/balance) | PENDING (Audit is $1,500, 7 business days) | PENDING Joaquin |
+| Retainer billing (monthly, start date) | PENDING | PENDING Joaquin |
 
-A proposal with any PENDING term prints `[PENDING: <term>, Joaquin]` in that spot and cannot leave shadow until filled.
+A proposal with any PENDING term (Audit payment terms, retainer billing) prints `[PENDING: <term>, Joaquin]` in that spot and cannot leave shadow until filled.
 
 ## ROI inputs (Mark)
 
@@ -81,9 +83,9 @@ A proposal with any PENDING term prints `[PENDING: <term>, Joaquin]` in that spo
 ## Option construction (Mark) (DRAFT)
 
 Three options, all from business.md prices:
-- **Below target**: AI Audit ($1,500, 7 business days). Reduced scope; the low-risk first step. (Whether the Audit fee is credited toward an Install is PENDING Joaquin. Mark does not promise a credit.)
+- **Below target**: AI Audit ($1,500, 7 business days). Reduced scope; the low-risk first step. (The Audit fee is NOT credited toward an Install. Mark states this plainly.)
 - **At target**: AI Operations Install ($18,000, 21 days), Constituent/Customer Response Agent.
-- **Above target**: Install + Managed Operations retainer, starting at the low end of the retainer range ($2,400/mo). Which tier ($2,400-$4,800/mo) applies to which scope is PENDING Joaquin.
+- **Above target**: Install + Managed Operations retainer. Retainer tiers (SET, Joaquin 2026-10-08): **$2,400/mo for one workflow, $4,800/mo for multiple workflows**. Mark picks the tier from the number of workflows in scope and says which. Option 3 stays on offer (Joaquin: yes); where it does not pay back on labor savings alone, Mark says so.
 
 Target = the Install. If Joaquin sets a different target, change this line.
 
