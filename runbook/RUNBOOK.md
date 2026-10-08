@@ -26,7 +26,7 @@ Sunday: Aaron weekly review > Monday memo
 | 17:30 | Patty | Dashboard | Apollo stats | Sends, opens, replies, positive reply rate, meetings, bounces, inbox health |
 | Sun 19:00 | Aaron | Mode 4 WEEKLY REVIEW | All agents' metrics | One-page Monday memo (worst metric, one fix, "the one thing not to do") |
 
-Phase 2 agents run on demand (see Phase 2 pipeline below). Phase 3 agents (Vicky, Jerry, Maya, Angelina) are not built. Aaron also produces pre-call briefs on request.
+Phase 2 agents run on demand (see Phase 2 pipeline below). Phase 3 agents (Vicky, Jerry, Maya, Angelina) are built as files and checkers but are not in shadow yet: Joaquin adds their rows to /config/authority.md to start them. Aaron also produces pre-call briefs on request.
 
 ## Phase 2 pipeline (on demand)
 
@@ -56,6 +56,17 @@ Handoff contracts (Phase 2):
 Phase 2 shadow exit test is item-based: 10 real approved items per agent, >=95% approved with no edits, zero critical errors (see /config/authority.md).
 
 Phase 2 rules: Apollo is the system of record; drafts and staging only; price above $1,500 in writing only; never discount on a first meeting (offer reduced scope); constants in /config/sales.md and /config/brand.md. Authority flags for Frannie, Mark and Dolly start as `shadow` once Joaquin updates /config/authority.md (it still reads "not built").
+
+## Phase 3 agents (on demand)
+
+| Agent | Role | Trigger | Output / handoff | Checker |
+|---|---|---|---|---|
+| Vicky | Viral scripture short-form video scripts | Joaquin request (reference or theme) | Script file: 3 hooks, body, caption, hashtags. Joaquin records and posts. | `execution/scripture_check.py` |
+| Angelina | Translator (Spanish first, for NJ/PA municipalities with Hispanic leadership) | Request from Cody, Jerry, Maya or Joaquin with an approved English asset | Translated asset, glossary, flags. Outreach JSON goes to Patty only through the Chief of Staff gate (`angelina-patty`). | `execution/translation_check.py` |
+| Jerry | PR and press for documented wins | Joaquin request with a source of truth | Press release, boilerplate, subject lines, open facts. Joaquin sends. | `execution/press_check.py` |
+| Maya | Course creator: client training and courses | Install build phase or delivery, or Joaquin request | Six core module scripts, shot lists, reference materials. Joaquin records on Loom. | `execution/course_check.py` |
+
+Phase 3 rules: shadow from the first run; nothing is published, sent or shared; Joaquin approves and sends. Playbooks: `spanish-outreach` (Angelina > Patty) and `client-training` (Maya > Angelina when Spanish is needed > Chief of Staff recording package). Open items: venture for scripture content, approved scripture translation and verse source, Spanish opt-out wording, native-speaker reviewer, approved boilerplate and media contact, whether courses are sold as a product.
 
 ## Chief of Staff (head of agents)
 

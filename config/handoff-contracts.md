@@ -45,5 +45,11 @@ Cell delimiter is ` | ` (with spaces); a bare `|` inside a cell is regex alterna
 | cody-patty | footer_ref | json_key | footer_ref | Y |
 | cody-patty | sources_assumptions | json_key | sources_assumptions | Y |
 | patty-aaron | capacity_tomorrow | regex | capacity_tomorrow | Y |
+| angelina-patty | prospect_id | json_key | prospect_id | Y |
+| angelina-patty | emails | json_len | emails=3 | Y |
+| angelina-patty | linkedin_note | json_key | linkedin_note | Y |
+| angelina-patty | sender | json_key | sender | Y |
+| angelina-patty | footer_ref | json_key | footer_ref | Y |
+| angelina-patty | sources_assumptions | json_key | sources_assumptions | Y |
 
 Assumption: the `aaron-cody` JSON key names follow the runbook's field list (Apollo record ID, name, title, org, city, size, niche, tier, trigger line, verified email status). Joaquin or Aaron's SOP may use different key spellings; adjust here if so.

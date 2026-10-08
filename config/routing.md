@@ -10,6 +10,8 @@ Rules the router applies on top of this table (see `/config/decision-rights.md`)
 | outside_service_menu | aiab | outside the menu|custom build|out of scope | - | escalate | 100 | YES |
 | run_the_day | aiab | run the day|daily run|run today|start the day | daily-outbound | playbook | 60 | NO |
 | run_the_week | aiab | run the week|weekly review|weekly memo|monday memo | weekly-review | playbook | 60 | NO |
+| spanish_outreach | aiab | spanish (outreach|sequence|campaign)|translate the sequence | spanish-outreach | playbook | 50 | NO |
+| spanish_training | aiab | spanish training|training in spanish | client-training | playbook | 50 | NO |
 | call_followup | aiab | follow-?up email.*call|call.*follow-?up email|after the call|debrief|post-?call|call transcript | post-call | playbook | 50 | NO |
 | new_prospects | aiab | find|source|prospects?|leads?|city clerks?|clerks|score|send list | Aaron | agent | 30 | NO |
 | pre_call_brief | aiab | pre-?call brief|brief me on|one-page brief | Aaron | agent | 40 | NO |

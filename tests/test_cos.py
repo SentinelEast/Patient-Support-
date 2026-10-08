@@ -233,6 +233,35 @@ class ExtensibilityTests(unittest.TestCase):
             shutil.rmtree(tmp)
 
 
+class Phase3ActivationTests(unittest.TestCase):
+    """The four Phase 3 agents are built as files. They stay uncallable until Joaquin adds authority rows; then they just work."""
+
+    def test_built_files_exist_but_agents_stay_blocked_until_authority_rows(self):
+        for name in ("vicky", "angelina", "jerry", "maya"):
+            self.assertTrue((REPO / f".claude/agents/{name}.md").exists(), name)
+            self.assertTrue((REPO / f"sops/{name}-sop.md").exists(), name)
+            self.assertFalse(callable_agent(name.title(), REPO)[0], name)
+        self.assertFalse(plan_run.plan("spanish-outreach", {"cody_json": "x"}, REPO)["ready"])
+
+    def test_authority_rows_activate_them_with_no_code_change(self):
+        tmp = _copy_repo()
+        try:
+            auth = tmp / "config/authority.md"
+            text = auth.read_text()
+            for n in ("Vicky", "Jerry", "Maya", "Angelina"):
+                text = text.replace(f"| {n} | 3 | not built | - | - | - | NO |", f"| {n} | 3 | shadow | 2026-10-09 | 0/10 | 0 | NO |")
+            auth.write_text(text)
+            for n in ("Vicky", "Jerry", "Maya", "Angelina"):
+                self.assertTrue(callable_agent(n, tmp)[0], n)
+            r = route("write a press release on the Camden win", tmp)
+            self.assertEqual((r["owner"], r["needs_joaquin"]), ("Jerry", False))
+            p = plan_run.plan("spanish-outreach", {"cody_json": "x"}, tmp)
+            self.assertTrue(p["ready"], p["blocking"])
+            self.assertEqual(p["waves"], [["s1"], ["s2"]])
+        finally:
+            shutil.rmtree(tmp)
+
+
 def _copy_repo():
     tmp = Path(tempfile.mkdtemp())
     shutil.copytree(REPO / "config", tmp / "config")

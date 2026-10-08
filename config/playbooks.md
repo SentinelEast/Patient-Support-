@@ -75,6 +75,29 @@ Every step also passes the receiving agent's own hard rules (its agent file). Fa
 | s1 | COS | - | - | - | Escalation text, /config/decision-rights.md | Classification: Chief of Staff decides or Joaquin decides | - |
 | s2 | COS | s1 | Joaquin decides | - | Classification | One consolidated escalation message (shadow: "N drafts ready for review" only; no prospect data leaves the system) | - |
 
+## playbook: spanish-outreach
+- venture: aiab
+- trigger: Joaquin approves Spanish outreach for municipal contacts with Hispanic leadership, or "translate the sequence for ..."
+- required_inputs: cody_json
+- stop_conditions: Spanish opt-out wording not approved; no native-speaker reviewer named; list not approved by Joaquin; any critical error
+
+| Step | Agent | Depends on | Condition | Repeat | Input | Output | Gate |
+|---|---|---|---|---|---|---|---|
+| s1 | Angelina | - | Cody JSON already passed its assembler PASS | - | Approved English sequence JSON (Cody) | Spanish sequence JSON, glossary, flags; translation_check PASS | angelina-patty |
+| s2 | Patty | s1 | Joaquin approved the Spanish opt-out wording, the reviewer and the list | - | Spanish JSON + send list | Re-verified emails staged (shadow: draft only) | - |
+
+## playbook: client-training
+- venture: aiab
+- trigger: an install reaches build phase or delivery, or "build the training library for ..."
+- required_inputs: scope_outline, install_notes
+- stop_conditions: a module covers a feature not delivered; any critical error
+
+| Step | Agent | Depends on | Condition | Repeat | Input | Output | Gate |
+|---|---|---|---|---|---|---|---|
+| s1 | Maya | - | - | - | Signed-scope outline (Mark) + install notes | Six core module scripts, shot lists, reference materials; course_check PASS | - |
+| s2 | Angelina | s1 | client staff need Spanish and Joaquin approved | - | Approved module scripts | Spanish module scripts; translation_check PASS | - |
+| s3 | COS | s1,s2 | - | - | All outputs | Recording package for Joaquin (order, shot lists) | - |
+
 ## playbook: vault-stub
 - venture: vault
 - trigger: [PENDING: Joaquin]
