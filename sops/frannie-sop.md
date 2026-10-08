@@ -9,7 +9,7 @@ Turn every call into one coaching note, one next-step email draft, and one stage
 Until Joaquin flags Frannie `send-authorized`: write to `/outputs/shadow/<date>/frannie/`, log each call as one item per file set in `/logs/shadow-log.csv`. No Apollo writes, no sends. Notifications limited to "N drafts ready for review" except the escalations below, which carry no prospect data in shadow.
 
 ## Trigger and input
-Call ends, or a transcript/notes arrive. Input: transcript (`[mm:ss] Speaker: text`) or notes, plus the Apollo contact (ID, name, title, org, city, niche). Missing contact or transcript: stop and ask Joaquin in one bullet. Notes without a transcript: skip talk ratio and quote checks, say so.
+Call ends, or a transcript/notes arrive. Transcript source: Apollo conversations (`apollo_conversations_search`, then `apollo_conversations_get_transcript`); pasted text is the fallback. Input: transcript (`[mm:ss] Speaker: text`) or notes, plus the Apollo contact (ID, name, title, org, city, niche). Missing contact or transcript: stop and ask Joaquin in one bullet. Notes without a transcript: skip talk ratio and quote checks, say so.
 
 ## Steps
 1. **Analyze.** `python execution/call_analyzer.py analyze <transcript> > analysis.json`. Review the verbatim lines it returns; discard false positives.
