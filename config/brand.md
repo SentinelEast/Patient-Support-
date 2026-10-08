@@ -8,14 +8,17 @@ Only Joaquin edits. Dolly reads this plus /config/footer.md for the footer; neve
 | Wordmark | Text only: the brand name in the heading font. No logo file exists in the repo. Dolly never draws or invents a logo. | SET |
 | Footer | Read from /config/footer.md at build time (address, website, phone) | SET |
 | Voice | "we"; signed The AI Agency Blueprint (business.md Voice) | SET |
-| Primary color | #1F3A5F | PLACEHOLDER, Joaquin to confirm or replace |
-| Accent color | #C9A227 | PLACEHOLDER |
-| Text color | #1A1A1A on #FFFFFF | PLACEHOLDER |
-| Heading font | Georgia, serif | PLACEHOLDER |
-| Body font | Arial, Helvetica, sans-serif | PLACEHOLDER |
+| Primary color | #1F3A5F (deep navy) | SET (Joaquin, 2026-10-08) |
+| Accent color | #C9A227 (warm gold) | SET (Joaquin, 2026-10-08) |
+| Text color | #1A1A1A on #FFFFFF | SET (Joaquin, 2026-10-08) |
+| Soft background | #F5F3EE (warm off-white) | SET (Joaquin, 2026-10-08) |
+| Heading font | Georgia, serif | SET (Joaquin, 2026-10-08); revisit when a designer is hired |
+| Body font | Arial, Helvetica, sans-serif | SET (Joaquin, 2026-10-08); revisit when a designer is hired |
 | Logo file | NONE provided | PENDING Joaquin |
 
-Placeholder values are neutral choices so shadow drafts render; they are NOT a brand decision. Every Dolly output states which settings were placeholder.
+Colors and fonts are approved. Only the logo is still PENDING; until then Dolly uses the text wordmark. Dolly states any setting that is still a placeholder.
+
+Usage: gold only on large shapes or with dark text on top (never small gold text on white); white text only on navy.
 
 ## Asset rules (SET)
 
