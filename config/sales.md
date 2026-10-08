@@ -65,10 +65,10 @@ Frannie logs against these IDs; anything else is logged as `OTHER` with the verb
 | Start-date rule (kickoff after deposit) | Work starts when the deposit clears | SET (Joaquin, 2026-10-08) |
 | Audit fee credit toward Install | NO credit | SET (Joaquin, 2026-10-08) |
 | Audit payment terms | $1,500 paid upfront in full | SET (Joaquin, 2026-10-08) |
-| Retainer billing | Monthly, sold as an ADD-ON to the Install (not billed from delivery by default) | SET: add-on (Joaquin, 2026-10-08) |
-| Retainer start date | PENDING (when the first monthly charge begins) | PENDING Joaquin |
+| Retainer billing | OPTIONAL add-on. No monthly maintenance unless agreed with the client; if agreed, billed monthly at the tier price | SET (Joaquin, 2026-10-08) |
+| Retainer start date | Set in the client agreement; no default | SET: per agreement |
 
-A proposal with any PENDING term (retainer start date) prints `[PENDING: <term>, Joaquin]` in that spot and cannot leave shadow until filled.
+A proposal with any PENDING term prints `[PENDING: <term>, Joaquin]` in that spot and cannot leave shadow until filled.
 
 ## ROI inputs (Mark)
 
@@ -76,7 +76,7 @@ A proposal with any PENDING term (retainer start date) prints `[PENDING: <term>,
 |---|---|---|
 | Hours currently spent on the pain workflow | Must come from the prospect (transcript/notes). If absent: "INPUT NEEDED", no number. | SET |
 | Hourly cost | Use the wage the prospect states. If they give none: "INPUT NEEDED". | SET |
-| Loaded-cost multiplier (taxes, benefits) | Default 1.0 (wage only, conservative) until Joaquin sets a factor. | PENDING Joaquin |
+| Loaded-cost multiplier (taxes, benefits) | 1.25 applied to the stated wage. Mark also shows the wage-only (1.0) result for comparison. | SET: use a factor (Joaquin); 1.25 is the working value, Joaquin to confirm or replace |
 | Share of hours replaced | Show BOTH 50% and 70%, the positioning range in business.md. State it is a target range, not a guarantee, and that no client results exist yet. | SET |
 | Weeks per year | 52 | SET |
 | Payback (months) | Price / monthly net savings. If net savings <= 0: "no payback on labor savings alone". | SET |
@@ -86,7 +86,7 @@ A proposal with any PENDING term (retainer start date) prints `[PENDING: <term>,
 Three options, all from business.md prices:
 - **Below target**: AI Audit ($1,500, 7 business days). Reduced scope; the low-risk first step. (The Audit fee is NOT credited toward an Install. Mark states this plainly.)
 - **At target**: AI Operations Install ($18,000, 21 days), Constituent/Customer Response Agent.
-- **Above target**: Install + Managed Operations retainer. Retainer tiers (SET, Joaquin 2026-10-08): **$2,400/mo for one workflow, $4,800/mo for multiple workflows**. Mark picks the tier from the number of workflows in scope and says which. Option 3 stays on offer (Joaquin: yes); where it does not pay back on labor savings alone, Mark says so.
+- **Above target**: Install + Managed Operations retainer. Retainer tiers (SET, Joaquin 2026-10-08): **$2,400/mo for one workflow, $4,800/mo for multiple workflows**. Mark picks the tier from the number of workflows in scope and says which. Option 3 stays on offer (Joaquin: yes), as an optional add-on, never assumed; where it does not pay back on labor savings alone, Mark says so.
 
 Target = the Install. If Joaquin sets a different target, change this line.
 
