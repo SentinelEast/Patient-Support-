@@ -53,6 +53,8 @@ Handoff contracts (Phase 2):
 - **Mark > Dolly**: format, in-scope workflow steps, approved copy. Client names only after Joaquin approves.
 - **Frannie > Joaquin (Slack + Telegram)**: ready to buy, contract request, custom/municipal contract, anything outside the service menu, discount request. Ready to buy also goes to Mark.
 
+Phase 2 shadow exit test is item-based: 10 real approved items per agent, >=95% approved with no edits, zero critical errors (see /config/authority.md).
+
 Phase 2 rules: Apollo is the system of record; drafts and staging only; price above $1,500 in writing only; never discount on a first meeting (offer reduced scope); constants in /config/sales.md and /config/brand.md. Authority flags for Frannie, Mark and Dolly start as `shadow` once Joaquin updates /config/authority.md (it still reads "not built").
 
 ## Handoff contracts
