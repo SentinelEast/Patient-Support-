@@ -34,10 +34,10 @@
     {
       "id": "s2",
       "agent": "Mark",
-      "status": "running",
+      "status": "passed",
       "retries": 0,
-      "output": null,
-      "note": null
+      "output": "outputs/shadow/2026-10-08/mark/cos-RUN-20261008-001-s2-proposal-outline.md",
+      "note": "gates mark-cody and mark-dolly passed; ROI re-run matches; flagged day-13 follow-up after day-10 expiry"
     },
     {
       "id": "s3",
@@ -50,7 +50,7 @@
     {
       "id": "s4",
       "agent": "Cody",
-      "status": "pending",
+      "status": "running",
       "retries": 0,
       "output": null,
       "note": null
@@ -58,7 +58,7 @@
     {
       "id": "s5",
       "agent": "Dolly",
-      "status": "pending",
+      "status": "running",
       "retries": 0,
       "output": null,
       "note": null
