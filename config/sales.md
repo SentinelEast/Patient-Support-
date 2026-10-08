@@ -35,9 +35,11 @@ Frannie uses exactly these stage names so Apollo stays clean. Verify against Apo
 
 `Discovery Held` > `Qualified - Proposal Needed` > `Proposal Sent` > `Closed Won` | `Closed Lost` | `Nurture`
 
+Decision (Joaquin, 2026-10-08): NO custom Apollo fields. Objections and next step stay in the call note and task.
+
 Apollo facts checked 2026-10-08 (read-only): the only custom contact field is `Qualify Contact` (picklist: Qualified / Disqualified, read-only via API). There are NO custom fields for objections, next step or next-step date. Until Joaquin creates them (open item), Frannie stages the update as: stage, a call note (objections + summary), and an Apollo task (next step + due date).
 
-## Standard objections list (DRAFT)
+## Standard objections list (SET: approved unchanged by Joaquin, 2026-10-08)
 
 Frannie logs against these IDs; anything else is logged as `OTHER` with the verbatim quote. Response direction is guidance, not a script. No numbers.
 
@@ -66,7 +68,7 @@ Frannie logs against these IDs; anything else is logged as `OTHER` with the verb
 | Audit fee credit toward Install | NO credit | SET (Joaquin, 2026-10-08) |
 | Audit payment terms | $1,500 paid upfront in full | SET (Joaquin, 2026-10-08) |
 | Retainer billing | OPTIONAL add-on. No monthly maintenance unless agreed with the client; if agreed, billed monthly at the tier price | SET (Joaquin, 2026-10-08) |
-| Retainer start date | Set in the client agreement; no default | SET: per agreement |
+| Retainer start date | At delivery, if the retainer is agreed | SET (Joaquin, 2026-10-08) |
 
 A proposal with any PENDING term prints `[PENDING: <term>, Joaquin]` in that spot and cannot leave shadow until filled.
 
@@ -76,7 +78,7 @@ A proposal with any PENDING term prints `[PENDING: <term>, Joaquin]` in that spo
 |---|---|---|
 | Hours currently spent on the pain workflow | Must come from the prospect (transcript/notes). If absent: "INPUT NEEDED", no number. | SET |
 | Hourly cost | Use the wage the prospect states. If they give none: "INPUT NEEDED". | SET |
-| Loaded-cost multiplier (taxes, benefits) | 1.25 applied to the stated wage. Mark also shows the wage-only (1.0) result for comparison. | SET: use a factor (Joaquin); 1.25 is the working value, Joaquin to confirm or replace |
+| Loaded-cost multiplier (taxes, benefits) | 1.0: stated wage only | SET (Joaquin, 2026-10-08) |
 | Share of hours replaced | Show BOTH 50% and 70%, the positioning range in business.md. State it is a target range, not a guarantee, and that no client results exist yet. | SET |
 | Weeks per year | 52 | SET |
 | Payback (months) | Price / monthly net savings. If net savings <= 0: "no payback on labor savings alone". | SET |
