@@ -42,10 +42,10 @@
     {
       "id": "s3",
       "agent": "Cody",
-      "status": "running",
+      "status": "passed",
       "retries": 0,
-      "output": null,
-      "note": null
+      "output": "outputs/shadow/2026-10-08/cody/cos-RUN-20261008-001-s3-email.md",
+      "note": "gate frannie-cody passed; footer and signature verbatim; facts checked against transcript"
     },
     {
       "id": "s4",
