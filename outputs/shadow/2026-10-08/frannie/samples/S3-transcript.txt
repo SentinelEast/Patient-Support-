@@ -1,0 +1,28 @@
+# SYNTHETIC TEST FIXTURE. Fictional person and company, written for the Phase 2 dry run. Not a real call. Apollo ID is a placeholder.
+# contact: SAMPLE-APOLLO-003 | Tom Alvarez | Owner | Alvarez Roofing and Restoration (sample) | Camden, NJ | niche B | call date 2026-10-08
+[00:00] Joaquin: Thanks for joining, Tom. Twenty minutes: I'll ask about the business, we'll see if there's a fit, and we agree a next step. Good?
+[00:15] Tom: Good. I've been looking forward to this. A buddy of mine said you do AI for offices.
+[00:30] Joaquin: What's the biggest drag in your office?
+[00:36] Tom: Customers calling for updates. Where's my crew, did the insurance adjuster approve, when's the estimate. Two people in the office, and between them it's 25 hours a week on status calls and emails. They make $22 an hour each.
+[01:30] Joaquin: What does it cost you when they're tied up?
+[01:36] Tom: Estimates go out late. I lose jobs to guys who answer faster. Last storm season we missed callbacks for three days.
+[03:10] Joaquin: How are requests tracked today?
+[03:16] Tom: Texts, voicemail, a whiteboard. It's a mess.
+[04:20] Joaquin: What have you tried?
+[04:26] Tom: Nothing real. I hired a temp once, it didn't stick.
+[05:30] Tom: Also scheduling the crews is a nightmare. If you could do that too I'd sign tomorrow.
+[05:45] Joaquin: Scheduling isn't something we sell today. Let's stay on the customer response problem.
+[06:20] Tom: Fine. Customer response is the bigger headache anyway.
+[08:00] Joaquin: Who decides?
+[08:05] Tom: Me. Nobody else.
+[10:45] Joaquin: What would success look like in the first month?
+[10:52] Tom: Customers get answers right away, and my girls stop living on the phone.
+[12:30] Joaquin: We build a customer response system trained on your own documents, with a named human operator, delivered in 21 days.
+[12:55] Tom: I'm in. What do I need to sign? Where do I send the deposit?
+[13:10] Joaquin: Let me be clear on process. We put scope and price in writing first.
+[13:25] Tom: Fine, but give me a number. Can you do $15,000 for the whole thing?
+[13:40] Joaquin: We don't discount on a first meeting. What we can do is reduce scope: start with a $1,500 AI audit that maps the work, then decide on the build.
+[14:20] Tom: I'd rather skip the audit and go straight to the build.
+[14:30] Joaquin: Understood. I'll put the options in a written proposal and send it today.
+[14:50] Tom: Send it to tom@example.com. I want to start this month.
+[15:10] Joaquin: You'll have it today. Thank you, Tom.

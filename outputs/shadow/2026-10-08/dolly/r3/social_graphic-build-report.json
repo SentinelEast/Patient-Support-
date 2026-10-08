@@ -1,0 +1,14 @@
+{
+  "files": [
+    "r3/social_graphic-primary.svg",
+    "r3/social_graphic-alternate.svg"
+  ],
+  "placeholder_brand_settings": [
+    "Primary color",
+    "Accent color",
+    "Heading font",
+    "Body font"
+  ],
+  "footer_source": "config/footer.md",
+  "client_name_used": false
+}

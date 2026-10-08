@@ -1,0 +1,14 @@
+{
+  "files": [
+    "r1/proposal_cover-primary.svg",
+    "r1/proposal_cover-alternate.svg"
+  ],
+  "placeholder_brand_settings": [
+    "Primary color",
+    "Accent color",
+    "Heading font",
+    "Body font"
+  ],
+  "footer_source": "config/footer.md",
+  "client_name_used": false
+}

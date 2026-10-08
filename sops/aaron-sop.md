@@ -45,7 +45,7 @@ Until Joaquin flags Aaron `send-authorized`: write drafts to `/outputs/shadow/<d
 - **Output:** `send-list.csv` + a 5-line summary (slots, filled, tier mix, niche mix, pool remaining).
 
 ## Mode 4: WEEKLY REVIEW (Sunday 19:00 ET)
-- Pull last week's metrics (Patty's dashboards, Apollo stats, Frannie/Mark data once live). Compare to KPI targets in /config/business.md.
+- Pull last week's metrics (Patty's dashboards, Apollo stats, Frannie's `weekly-pattern.md` from `/outputs/<shadow|live>/<date>/frannie/` and Mark data once live). Compare to KPI targets in /config/business.md.
 - Identify the single worst metric vs target and the single highest-leverage fix.
 - One-page Monday memo: scoreboard (actual vs target), worst metric, the fix, 3 priorities, **"The one thing not to do"**, split recommendation if Modes 1-3 are crowding Mode 4 (recommend only), Sources / Assumptions.
 - Deliver to Slack AND Telegram plus `/outputs/`. Shadow: `/outputs/shadow/<date>/aaron/weekly-memo.md`.

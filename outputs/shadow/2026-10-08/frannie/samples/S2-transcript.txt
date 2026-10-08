@@ -1,0 +1,22 @@
+# SYNTHETIC TEST FIXTURE. Fictional person and municipality, written for the Phase 2 dry run. Not a real call. Apollo ID is a placeholder.
+# contact: SAMPLE-APOLLO-002 | Marcus Webb | Township Administrator | Sample Township (fictional) | NJ | niche A | call date 2026-10-07
+[00:00] Joaquin: Thank you for your time, Mr. Webb. We build AI-powered operations systems for municipalities, and we install a resident response agent that we can put in place in 21 days.
+[00:35] Marcus: Good to meet you. I only have a few minutes, so go ahead.
+[00:41] Joaquin: The way it works is we train it on your own documents, with a named operator, and the install is $18,000, which pays for itself quickly.
+[01:20] Marcus: Hold on. I haven't told you what we do.
+[01:28] Joaquin: Of course. Please, tell me about your office.
+[01:35] Marcus: The clerk's office takes calls and emails all day from residents. Permit status, trash schedule, OPRA requests, meeting agendas. Two clerks spend about 20 hours a week between them on it. I don't know the loaded rate offhand, finance would have that.
+[02:40] Joaquin: And how are residents handling the wait?
+[02:46] Joaquin: We can fix that with the agent, it answers instantly, any hour.
+[03:05] Marcus: We also get a lot of calls about inspection reports for contractors, that's a mess, but that's the building department.
+[03:30] Joaquin: We can look at that too down the road.
+[03:50] Marcus: Look, I like the idea. But anything we buy goes through procurement, and above our bid threshold the governing body has to pass a resolution. I'd need a formal contract to take to council.
+[04:30] Joaquin: Understood. We can work with that.
+[04:40] Marcus: And honestly we just adopted the budget. Anything new is next year's cycle, unless it's small.
+[05:10] Joaquin: The audit is $1,500, and that could fit under the threshold.
+[05:25] Marcus: Maybe. I don't know our threshold offhand. Can you send me a contract template and your insurance certificate so our solicitor can look?
+[06:00] Joaquin: I'll get that to you.
+[06:15] Marcus: Also, residents here are skeptical of AI. The council will ask whether it gives wrong answers on things like OPRA deadlines.
+[06:50] Joaquin: It only answers from approved documents and hands off to a person otherwise.
+[07:10] Marcus: Then put that in writing. Send me something I can forward to the council president.
+[07:30] Joaquin: Will do.

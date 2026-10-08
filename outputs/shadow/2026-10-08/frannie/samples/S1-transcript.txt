@@ -1,0 +1,35 @@
+# SYNTHETIC TEST FIXTURE. Fictional people and company, written for the Phase 2 dry run. Not a real call. Apollo ID is a placeholder.
+# contact: SAMPLE-APOLLO-001 | Dana Reyes | Owner | Reyes Property Management (sample) | Cherry Hill, NJ | niche B | call date 2026-10-07
+[00:00] Joaquin: Thanks for making time, Dana. We have twenty minutes. I'd like to hear how your office runs today, then see whether there's a fit, and agree a next step before we hang up. Sound fair?
+[00:22] Dana: Sure. Quick background, we manage about ninety units across Camden County, three of us in the office plus a maintenance crew.
+[00:41] Joaquin: What's eating the most time in the office right now?
+[00:48] Dana: Honestly, tenant calls and emails. Is the rent portal down, when is the plumber coming, can I get a copy of my lease. It's the same twenty questions all day. My office manager Priya spends about 15 hours a week just answering those, and I pay her $28 an hour.
+[01:25] Joaquin: And what happens when she can't get to them?
+[01:31] Dana: They pile up. Tenants get annoyed, and then I'm the one calling back at night. Last month a late-night leak ticket sat in the inbox for two days because it was buried under lease copy requests.
+[02:10] Joaquin: Tell me more about how the requests come in.
+[02:16] Dana: Mostly email and the phone. Some through the portal. Priya keeps a spreadsheet of open requests, but it's her spreadsheet. If she's out sick, nobody knows what's open.
+[03:05] Joaquin: What have you tried so far?
+[03:10] Dana: We looked at a canned auto-reply once. It answered with the wrong office hours and a tenant called me furious. So I'm wary.
+[04:02] Joaquin: That's fair. What would a good outcome look like for you?
+[04:09] Dana: Priya gets her week back for the work only she can do, like inspections and vendor follow-up, and nothing urgent gets buried. I don't want a robot telling a tenant something wrong.
+[05:20] Joaquin: Who else touches these requests?
+[05:26] Dana: Just me and Priya. Our maintenance coordinator Luis gets the work orders after.
+[06:40] Joaquin: And if nothing changes, where are you in a year?
+[06:46] Dana: Burned out, or hiring a second office person, which I'd rather not do.
+[08:15] Joaquin: Who decides on something like this?
+[08:20] Dana: Me. I'm the owner. I'd talk to my accountant about cost, but it's my call.
+[10:30] Joaquin: Anything else behind the volume we should know about?
+[10:36] Dana: Move-ins and move-outs spike it. Twice a year we get slammed.
+[12:10] Joaquin: Here's how we'd approach it. We build a customer response system trained on your own documents, your lease terms, your portal steps, your office hours, with a named human operator who reviews what it can't answer, so nothing urgent gets buried and nothing goes out wrong.
+[12:55] Dana: How would it know the office hours are right? That's the thing that burned me.
+[13:05] Joaquin: It only answers from documents you give us and you approve, and anything outside them goes to a person.
+[13:30] Dana: OK. That's different from what I tried. I'd still want to think about it, and run it by my accountant.
+[14:20] Joaquin: Makes sense. The low-risk first step is a short AI audit where we map exactly what comes in and what the system would handle, before any build.
+[14:55] Dana: What does the audit cost?
+[15:00] Joaquin: The audit is $1,500 and takes seven business days.
+[15:20] Dana: That I can decide on. What about the full build?
+[15:26] Joaquin: We put anything beyond the audit in writing so you can review it with your accountant. I'll have a proposal to you.
+[16:10] Dana: Good. Send it to dana@example.com.
+[17:05] Joaquin: To confirm, we'll send a written proposal with options, and I'll follow up by Friday. Does that work?
+[17:20] Dana: Friday works.
+[18:00] Joaquin: Thanks, Dana.

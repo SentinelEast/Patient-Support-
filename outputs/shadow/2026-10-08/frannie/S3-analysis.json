@@ -1,0 +1,76 @@
+{
+  "turns": 26,
+  "duration": "15:10",
+  "talk_ratio": {
+    "prospect_pct": 54.0,
+    "ours_pct": 46.0,
+    "basis": "word count (proxy for talk time)",
+    "meets_target": false
+  },
+  "pitch": {
+    "first_pitch": {
+      "at": "12:30",
+      "line": "We build a customer response system trained on your own documents, with a named human operator, delivered in 21 days."
+    },
+    "too_early": false,
+    "basis": "timestamp 12:30 vs diagnose end 12:00",
+    "note": "heuristic; Frannie confirms against the full transcript"
+  },
+  "our_price_mentions": [
+    {
+      "at": "13:40",
+      "amount": 1500,
+      "above_entry_offer": false,
+      "line": "We don't discount on a first meeting. What we can do is reduce scope: start with a $1,500 AI audit that maps the work, then decide on the build."
+    }
+  ],
+  "price_violation": false,
+  "prospect_price_mentions": [
+    {
+      "at": "00:36",
+      "amounts": [
+        22
+      ],
+      "line": "Customers calling for updates. Where's my crew, did the insurance adjuster approve, when's the estimate. Two people in the office, and between them it's 25 hours a week on status calls and emails. They make $22 an hour each."
+    },
+    {
+      "at": "13:25",
+      "amounts": [
+        15000
+      ],
+      "line": "Fine, but give me a number. Can you do $15,000 for the whole thing?"
+    }
+  ],
+  "our_discount_language": [
+    {
+      "at": "13:40",
+      "line": "We don't discount on a first meeting. What we can do is reduce scope: start with a $1,500 AI audit that maps the work, then decide on the build."
+    }
+  ],
+  "objection_candidates": [],
+  "escalation_candidates": [
+    {
+      "trigger": "discount_request",
+      "at": "13:25",
+      "line": "Fine, but give me a number. Can you do $15,000 for the whole thing?"
+    }
+  ],
+  "off_phase_mentions": [
+    {
+      "who": "Tom",
+      "at": "05:30",
+      "line": "Also scheduling the crews is a nightmare. If you could do that too I'd sign tomorrow."
+    },
+    {
+      "who": "Joaquin",
+      "at": "05:45",
+      "line": "Scheduling isn't something we sell today. Let's stay on the customer response problem."
+    }
+  ],
+  "ready_to_buy_cues": [
+    {
+      "at": "12:55",
+      "line": "I'm in. What do I need to sign? Where do I send the deposit?"
+    }
+  ]
+}

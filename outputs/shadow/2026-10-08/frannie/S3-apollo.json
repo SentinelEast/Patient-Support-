@@ -1,0 +1,13 @@
+{
+  "STAGED_ONLY": true,
+  "applied_to_apollo": false,
+  "reason": "Shadow mode: no Apollo writes until Frannie is send-authorized",
+  "contact_id": "SAMPLE-APOLLO-003",
+  "stage": "Qualified - Proposal Needed",
+  "objections": ["O1"],
+  "next_step": "Mark proposal outline; Joaquin approves terms; written proposal to prospect",
+  "next_step_date": "2026-10-08",
+  "note": "Call 2026-10-08, 15 min. READY TO BUY. Pain: status calls/emails, 25 hrs/wk combined at $22/hr (prospect-stated). Asked what to sign, where to send deposit, and for $15,000 total. Refused discount, offered audit-first reduced scope. Prospect prefers straight to build. Off-phase raised (crew scheduling), declined.",
+  "task": {"title": "Joaquin: approve proposal terms and send (Tom Alvarez ready to buy)", "due": "2026-10-08"},
+  "escalate_to_joaquin": true
+}

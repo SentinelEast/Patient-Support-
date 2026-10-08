@@ -1,0 +1,7 @@
+{"hours_per_week": 15, "hours_source": "S1 transcript 00:48 (Dana Reyes: Priya, about 15 hours a week)",
+ "hourly_cost": 28, "cost_source": "S1 transcript 00:48 ($28 an hour, wage only)",
+ "loaded_multiplier": 1.0, "replaced_share": [0.5, 0.7],
+ "options": [
+  {"name": "AI Audit", "one_time": 1500, "monthly": 0, "delivery": "7 business days", "price_source": "config/business.md"},
+  {"name": "AI Operations Install", "one_time": 18000, "monthly": 0, "delivery": "21 days", "price_source": "config/business.md"},
+  {"name": "Install + Managed Operations", "one_time": 18000, "monthly": 2400, "delivery": "21 days + ongoing", "price_source": "config/business.md (low end of $2,400-$4,800/mo)"}]}

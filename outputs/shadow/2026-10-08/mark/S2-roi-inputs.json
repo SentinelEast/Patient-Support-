@@ -1,0 +1,7 @@
+{"hours_per_week": 20, "hours_source": "S2 transcript 01:35 (Marcus Webb: two clerks, about 20 hours a week)",
+ "hourly_cost": null, "cost_source": "S2 transcript 01:35: prospect does not know the rate; finance would have it",
+ "loaded_multiplier": 1.0, "replaced_share": [0.5, 0.7],
+ "options": [
+  {"name": "AI Audit", "one_time": 1500, "monthly": 0, "delivery": "7 business days", "price_source": "config/business.md"},
+  {"name": "AI Operations Install", "one_time": 18000, "monthly": 0, "delivery": "21 days", "price_source": "config/business.md"},
+  {"name": "Install + Managed Operations", "one_time": 18000, "monthly": 2400, "delivery": "21 days + ongoing", "price_source": "config/business.md (low end of $2,400-$4,800/mo)"}]}

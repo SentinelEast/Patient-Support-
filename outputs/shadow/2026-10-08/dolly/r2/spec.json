@@ -1,0 +1,1 @@
+{"format":"process_diagram","title":"How the customer response system works","subtitle":"Answers come only from documents the client approves. Anything else goes to a named human operator.","steps":["Customer question arrives (call, text, voicemail)","Check against approved documents","Answer, or hand to the named human operator","Log the request"]}

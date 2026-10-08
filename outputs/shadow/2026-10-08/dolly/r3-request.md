@@ -1,0 +1,2 @@
+# Dolly request R3 (from Joaquin): LinkedIn social graphic (SYNTHETIC SAMPLE)
+Format: social graphic. Brief asked for: headline, three bullets, plus a customer testimonial and a "trusted by" logo strip. Dolly builds the headline and bullets (copy from Cody: "Stop answering the same questions twice" / "Trained on your own documents" / "A named human operator" / "Delivered in 21 days"). The testimonial and logo strip are DECLINED: no testimonials or client logos exist.

@@ -1,0 +1,93 @@
+{
+  "turns": 20,
+  "duration": "07:30",
+  "talk_ratio": {
+    "prospect_pct": 59.9,
+    "ours_pct": 40.1,
+    "basis": "word count (proxy for talk time)",
+    "meets_target": false
+  },
+  "pitch": {
+    "first_pitch": {
+      "at": "00:00",
+      "line": "Thank you for your time, Mr. Webb. We build AI-powered operations systems for municipalities, and we install a resident response agent that we can put in place in 21 days."
+    },
+    "too_early": true,
+    "basis": "timestamp 00:00 vs diagnose end 12:00",
+    "note": "heuristic; Frannie confirms against the full transcript"
+  },
+  "our_price_mentions": [
+    {
+      "at": "00:41",
+      "amount": 18000,
+      "above_entry_offer": true,
+      "line": "The way it works is we train it on your own documents, with a named operator, and the install is $18,000, which pays for itself quickly."
+    },
+    {
+      "at": "05:10",
+      "amount": 1500,
+      "above_entry_offer": false,
+      "line": "The audit is $1,500, and that could fit under the threshold."
+    }
+  ],
+  "price_violation": true,
+  "prospect_price_mentions": [],
+  "our_discount_language": [],
+  "objection_candidates": [
+    {
+      "id": "O9",
+      "at": "03:50",
+      "line": "Look, I like the idea. But anything we buy goes through procurement, and above our bid threshold the governing body has to pass a resolution. I'd need a formal contract to take to council."
+    },
+    {
+      "id": "O2",
+      "at": "04:40",
+      "line": "And honestly we just adopted the budget. Anything new is next year's cycle, unless it's small."
+    },
+    {
+      "id": "O9",
+      "at": "05:25",
+      "line": "Maybe. I don't know our threshold offhand. Can you send me a contract template and your insurance certificate so our solicitor can look?"
+    },
+    {
+      "id": "O3",
+      "at": "06:15",
+      "line": "Also, residents here are skeptical of AI. The council will ask whether it gives wrong answers on things like OPRA deadlines."
+    }
+  ],
+  "escalation_candidates": [
+    {
+      "trigger": "contract",
+      "at": "03:50",
+      "line": "Look, I like the idea. But anything we buy goes through procurement, and above our bid threshold the governing body has to pass a resolution. I'd need a formal contract to take to council."
+    },
+    {
+      "trigger": "municipal/procurement",
+      "at": "03:50",
+      "line": "Look, I like the idea. But anything we buy goes through procurement, and above our bid threshold the governing body has to pass a resolution. I'd need a formal contract to take to council."
+    },
+    {
+      "trigger": "contract",
+      "at": "05:25",
+      "line": "Maybe. I don't know our threshold offhand. Can you send me a contract template and your insurance certificate so our solicitor can look?"
+    },
+    {
+      "trigger": "municipal/procurement",
+      "at": "06:15",
+      "line": "Also, residents here are skeptical of AI. The council will ask whether it gives wrong answers on things like OPRA deadlines."
+    }
+  ],
+  "off_phase_mentions": [
+    {
+      "who": "Marcus",
+      "at": "03:05",
+      "line": "We also get a lot of calls about inspection reports for contractors, that's a mess, but that's the building department."
+    }
+  ],
+  "ready_to_buy_cues": [
+    {
+      "at": "05:25",
+      "line": "Maybe. I don't know our threshold offhand. Can you send me a contract template and your insurance certificate so our solicitor can look?"
+    }
+  ]
+}
